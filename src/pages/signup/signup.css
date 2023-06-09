@@ -89,7 +89,7 @@ margin-bottom: 20px;
     background-color: transparent;
     color: #E0A96D;
 }
-.check{
+.checks{
     text-align: left;
     margin-left: 80px;
 }
@@ -109,7 +109,7 @@ margin-bottom: 20px;
     #signup-btn{
         margin-left: -240px;
     }
-    .check{
+    .checks{
         margin-left: 60px;
     }
     }
@@ -125,7 +125,7 @@ margin-bottom: 20px;
         .signup-name input{
             width: 150px;
         }
-     .check {
+     .checks {
         margin-left: 20px;
      }
      #signup-btn{
@@ -150,7 +150,7 @@ margin-bottom: 20px;
         width: 300px;
         margin-left: 25px;
       }
-      .check{
+      .checks{
         margin-left: 25px;
       }
       #signup-btn{
@@ -181,7 +181,7 @@ margin-bottom: 20px;
             width: 250px;
             margin-left: 15px;
           } 
-          .check{
+          .checks{
             margin-left: 20px;
           }
           #signup-btn{
