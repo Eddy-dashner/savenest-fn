@@ -77,14 +77,14 @@ function Home() {
           <h1>LOGO</h1>
         </div>
         <div className="savenest-link">
-          <ul>
-            <li>
+          <ul className="home-list">
+            <li className="home-link">
               <a href="">Home</a>
             </li>
-            <li>
+            <li className="home-link">
               <a href="#about">Who we are</a>
             </li>
-            <li>
+            <li className="home-link">
               <a href="#connect">Connect</a>
             </li>
           </ul>
@@ -138,14 +138,14 @@ function Home() {
         </div>
       </div>
       <div
-        className="savenest-about slide-up"
+        className="savenest-home-about slide-up"
         ref={(ref) => (sectionRefs.current[0] = ref)}
       >
-        <h1>
+        <h1 className="home-about-header">
           Who <span> we are</span>
         </h1>
         <div className="par">
-          <p>
+          <p className="home-about-par">
             We strive to help people create and implement financial plans, track
             expenses, and identify areas where they can reduce spending. It
             encourages goal-oriented savings by providing tools to set and track
@@ -160,37 +160,37 @@ function Home() {
         </div>
       </div>
       <div
-        className="savenest-work slide-up"
+        className="savenest-home-work slide-up"
         ref={(ref) => (sectionRefs.current[1] = ref)}
       >
         <h1 className="hwork">How it works</h1>
-        <div className="savenest-cards">
+        <div className="savenest-home-cards">
           {allData.map((data) => (
-            <div className="card">
-              <p className="number">{data.number}</p>
-              <h1 className="title">{data.title}</h1>
-              <p className="description">{data.description}</p>
+            <div className="home-card">
+              <p className="home-number">{data.number}</p>
+              <h1 className="home-title">{data.title}</h1>
+              <p className="home-description">{data.description}</p>
             </div>
           ))}
         </div>
       </div>
       <div
-        className="savenest-test slide-up"
+        className="savenest-home-test slide-up"
         ref={(ref) => (sectionRefs.current[2] = ref)}
       >
-        <h1>Testimonials</h1>
-        <div className="testimonial-intro" {...settings}>
+        <h1 className="home-test-header">Testimonials</h1>
+        <div className="testimonial-home-intro" {...settings}>
           {testData.map((test) => (
-            <div className="all-test" key={testData.id}>
+            <div className="all-home-test" key={testData.id}>
               <div className="test-image">
                 <img src={test.image} />
               </div>
               <div className="test-descri">
-                <p>{test.description}</p>
+                <p className="test-descri-para">{test.description}</p>
                 <br />
-                <h4>{test.name}</h4>
+                <h4 className="test-descri-head">{test.name}</h4>
               </div>
-              <div className="test-icon">
+              <div className="test-home-icon">
                 <span>
                   <MdArrowForwardIos
                     onClick={() => handleSlideClick(testData.id - 1)}
@@ -205,22 +205,22 @@ function Home() {
         </div>
       </div>
       <div
-        className="savenest-contact slide-up"
+        className="savenest-home-contact slide-up"
         id="connect"
         ref={(ref) => (sectionRefs.current[3] = ref)}
       >
         <h1>Connect with us</h1>
         <div className="both-savenest">
-          <div className="contact-info">
-            <h2>
+          <div className="contact-home-info">
+            <h2 className="contact-home-head">
               We would love to <br /> hear from you
             </h2>
-            <p className="data">
+            <p className="contact-home-data">
               Share your feedback with us! We value your thoughts on our
               money-saving website. Contact us today and help us enhance your
               savings experience.
             </p>
-            <div className="contact-icon">
+            <div className="contact-home-icon">
               <p className="phone-ic">
                 <span>
                   <BsFillTelephoneFill />
@@ -235,7 +235,7 @@ function Home() {
               </p>
             </div>
           </div>
-          <div className="contact-form">
+          <div className="contact-home-form">
             <input type="text" placeholder="Your Name" className="name" />
             <input type="text" placeholder="Phone Number" className="phone" />
             <br />
@@ -271,10 +271,10 @@ function Home() {
           </span>
         </div>
         <div className="footer-lists">
-          <ul>
-            <li>Home</li>
-            <li>Who we are</li>
-            <li>Connect</li>
+          <ul className="footer-list">
+            <li className="footer-link">Home</li>
+            <li className="footer-link">Who we are</li>
+            <li className="footer-link">Connect</li>
           </ul>
         </div>
         <div className="footer-right">@2023 Savenest | All Rights Reserved</div>
