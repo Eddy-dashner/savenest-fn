@@ -1,13 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
-import Home from "./pages/home/home";
-// import './App.css';
+import Index from '../src/pages/saving-account/index'
 
 function App() {
   return (
-    <div className="App">
-      <Home />
-    </div>
+
+   <Index/>
+ 
   );
 }
 
