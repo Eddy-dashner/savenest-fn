@@ -52,7 +52,7 @@ function Session(){
             <table border={0}>   
             
             <tr border='2px' className="m">
-                <th> <input type="checkbox"/>LOCATION/SOURCE</th>
+                <th> <input type="checkbox" className="check"/>LOCATION/SOURCE</th>
                 <th>PAGES</th>
                 <th>DURATION</th>
                 <th>DEVICE/BROWSER/OS</th>
@@ -60,7 +60,7 @@ function Session(){
                 <th>VISUALIZE</th>
                 </tr>
                 <tr>
-                    <td><input type="checkbox"/> Kigali-Rwanda</td>
+                    <td><input type="checkbox" className="check"/> Kigali-Rwanda</td>
                     <td>3</td>
                     <td>4:35</td>
                     <td><i class='bx bx-laptop'></i>/<i class='bx bxl-chrome'></i>/<i class='bx bxl-windows' ></i></td>
@@ -70,7 +70,7 @@ function Session(){
                 </tr>
 
                 <tr>
-                    <td><input type="checkbox"/> Bugesera-Rwanda</td>
+                    <td><input type="checkbox" className="check"/> Bugesera-Rwanda</td>
                     <td>5</td>
                     <td>2:45</td>
                     <td><i class='bx bx-mobile'></i>/<i class='bx bxl-chrome'></i>/<i class='bx bxl-android'></i></td>
