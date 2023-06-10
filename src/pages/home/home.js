@@ -220,7 +220,7 @@ function Home() {
               money-saving website. Contact us today and help us enhance your
               savings experience.
             </p>
-            <div>heloooooo</div>
+
             <div className="contact-home-icon">
               <p className="phone-ic">
                 <span>
