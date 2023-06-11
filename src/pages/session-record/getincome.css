@@ -1,61 +1,64 @@
 *{
     margin: 0;
 }
-body{
+.div {
+    width: 80%;
     font-family: poppins;
 }
-th{
-    padding-right: 60px;
+.al th{
+    padding-right: 40px;
     padding-left: 15px;
     padding-top:30px;
 
 }
-
-td{
-    padding-right: 68px;
-    padding-left: 40px;
+.al td{
+    padding-right: 25px;
+    padding-left: 35px;
     padding-top:30px; 
 }
-h2{
+.div h2{
     color: rgba(224, 169, 109, 1); 
     padding-top: 20px;
     text-align: center;
     padding-bottom: 10px;
 
 }
-.title{
+.tile{
     background-color: rgba(224, 168, 109, 0.192);
     padding-bottom: 20px;
     padding-left: 50px;
     
 }
-.to{
+.t{
     display: flex;
     justify-content: space-between;
     padding-right: 60px;
     padding-bottom: 30px;
 }
-.line{
-  width: 95%;
+.lie{
+  width: 92%;
   margin-left: 50px;
   padding: 1px;
   background-color: rgba(0, 0, 0, 0.589);
   margin-bottom: 30px;
 }
 
-ul, li {
+.oe ul, li {
     list-style: none;
     display: flex;
     padding: 10px 190px;
     justify-content: space-between;
     
 }
-a{
+.oe a{
     text-decoration: none;
     color: black;
 }
-ul{
+.oe ul{
     border-bottom: 1px solid black;
+}
+.oe li:hover {
+    background-color: rgba(128, 128, 128, 0.082);
 }
 .second ul, li {
     list-style: none;
@@ -64,42 +67,42 @@ ul{
     justify-content: space-between;
     
 }
-a{
+.second a{
     text-decoration: none;
     color: black;
 }
 .second {
     border: 1px solid black;
 }
-li:hover {
+.second li:hover {
     background-color: rgba(128, 128, 128, 0.082);
 }
-.all{
-    margin: 0 120px;
+.al{
+    margin: 0 40px;
 }
 
-.icon{
+.iconic{
     background-color: rgba(224, 169, 109, 1);
     width: 5%;
     height: 50px;
 }
-.icon i{
+.iconic i{
     padding-left: 10px;
     font-size: 30px;
     color: white;
     padding-top: 10px;
 } 
-.ico{
+.conic{
     background-color: rgba(224, 169, 109, 1);
     width: 25%;
     height: 50px;
 }
-.ico p{
+.conic p{
     padding-left: 30px;
     color: white;
     padding-top: 10px;
 }
-.ico i{
+.conic i{
     position: relative;
     bottom: 50%;
     left: 65%;
@@ -108,17 +111,17 @@ li:hover {
     padding-top: 10px;
 }
 
-.ic{
+.onic{
     background-color: rgba(224, 169, 109, 1);
     width: 25%;
     height: 50px;
 }
-.ic p{
+.onic p{
     padding-left: 30px;
     color: white;
     padding-top: 10px;
 }
-.ic i{
+.onic i{
     position: relative;
     bottom: 50%;
     left: 65%;
@@ -126,38 +129,46 @@ li:hover {
     color: white;
     padding-top: 10px;
 }
-.io{
+.nic {
     background-color: rgba(224, 169, 109, 1);
     width: 25%;
     height: 50px;
 }
-.io p{
+.nic p{
     padding-left: 30px;
     color: white;
     padding-top: 10px;
 }
-.io i{
+.nic i{
     position: relative;
     bottom: 50%;
-    left: 80%;
+    left: 90%;
     font-size: 10px;
     color: white;
     padding-top: 10px;
 }
 
-.two{
-    margin-left: 300px;
+.twe{
+    margin-left: 170px;
     display: flex;
     gap: 5px;
 }
 
-button{
+.butn button{
     color: white;
     border: none;
     background-color: rgba(224, 169, 109, 1);
     padding: 10px 20px;
     border-radius: 10px;
 }
-.one{
+.oe{
     padding-bottom: 30px;
+}
+.bx i{
+    color: rgba(224, 169, 109, 1);
+    font-size: larger;
+    position: relative;
+}
+.bx{
+    font-size: larger;
 }
