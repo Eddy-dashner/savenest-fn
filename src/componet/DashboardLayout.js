@@ -1,10 +1,11 @@
 import React from "react";
-import Dashboardnav from "../pages/dashboard/dashboardnav";
+import Navdashboard from "../pages/dashboard/navdashboard";
+import "./dashboardlayout.css";
 
 function DashboardLayout({ children }) {
   return (
-    <div style={{ display: "flex" }}>
-      <Dashboardnav />
+    <div className="dashboardlay">
+      <Navdashboard />
       <div>{children}</div>
     </div>
   );

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 // import ScrollReveal from "scrollreveal";
 import "./home.css";
-import Button from "../../properties/button";
+import Button from "../../properties/Button";
 import Image from "./images/2.webp";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";

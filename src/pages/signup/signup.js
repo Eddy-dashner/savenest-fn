@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./signup.css";
 import { ToastContainer, toast, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Button from "../../properties/button";
+// import Button from "../../properties/Button";
 
 function Signup() {
   const name = "SIGN UP";
@@ -160,7 +160,7 @@ function Signup() {
                 id="signup-btn"
                 onClick={handleSubmit}
               />
-              <Button btnName="Submit"></Button>
+              {/* <Button btnName="Submit"></Button> */}
               <ToastContainer
                 transition={Flip}
                 hideProgressBar={true}
