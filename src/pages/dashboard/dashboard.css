@@ -5,60 +5,65 @@
     --tex-black-900:#302e4d;
     --tex-black-700:#504e70;
 }
-*{
-    margin: 0;
+/* *{
+     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-  
-}
+   
+} */
 .dash-container{
-    /* font-family: "poppins , sans-serif"; */
+    
     user-select: none;
-    overflow-x: hidden;
-    /* background-color: var(--bg-black-50); */
-    height: 100vh;
+    height: 140vh;
+    width: 100%;
     display: grid;
     grid-template-columns: 20% 80%;
     /* padding: 10px; */
-    
+    margin-left: 10px;
+    padding: 0;
+    box-sizing: border-box;
 }
 .dash-main{
-    /* background: var( --bg-black-900); */
-    background-color: red;
+    
     display: grid;
     grid-template-columns: 80% 20%;
-    padding: 20px; 
+    /* padding: 20px;  */
 }
 
 .dashboard-cont{
     /* background-color: red; */
     display: grid;
     width: 100%;
+    height: 100%;
     /* padding:20px ;  */
     /* line-height: 20px; */
     grid-template-columns: 14rem auto 23rem ;
 }
 
-a{
+aside .sidebar a{
     color: #302e4d;
+    text-decoration: none;
+    list-style: none;
+    /* background-color: red; */
 }
-img{
+.top .logo img{
     display: block;
     /* width: 100%; */
 }
-h2{
+/* h2{
 font-weight: 800;
 font-size: 20px;
-}
+} */
 aside{
     height: 100vh; 
     background-color: #ffff;
+    /* background-color: #2D3B6D; */
 }
-.logout{
+/* .logout{
     padding-top: 90px;
-}
+} */
 aside .top{
     /* background-color: #504e70; */
    display: flex;  
@@ -80,11 +85,14 @@ aside .close{
 aside .sidebar{
     display: flex;
     flex-direction: column;
-    height: 85vh;
+    height: 95vh;
     position: relative;
     padding: 10px;
     gap: 10px;
     top: 30px;
+   margin-left: 20px;
+  
+   width: 100%;
 }
     
 aside .sidebar a{
@@ -111,66 +119,54 @@ aside .sidebar a{
 .active h2{
     color: whitesmoke;   
 }
-aside .sidebar a:hover{
-    background-color: red;
-}
-
-main{
-    margin-top: 20px;
+.sidebar a:hover{
+    color: #FFA800;
 }
 .parent h1{
   color: #E0A96D;
 }
- input{
+.date input{
     display: inline-block;
     background-color: white;
      border-radius: 5px;
      border: none;
-     margin-top: 10px;
+     margin-top: -5px;
      padding: 5px 16px;
      font-size: 15px;
      width: 63%;
-     height: 40px;
+     height: 30px;
 }
-main .date input[typpe="date"]{
-background: transparent;
-color: #302e4d;
-}
-
-
 .parent{
 background-color: var(--bg-black-50);
   height: 100%;
-  padding: 20px; 
+  padding: 10px; 
   }
   .parent1{
-      margin: 20px;
+      margin: 10px;
       height: 50vh;
   display: grid;
-  grid-template-columns: 30% 20% 40%;
-  /* margin: 20px; */
-  gap: 20px;
+ grid-template-columns: repeat(3,1fr);
+  /* gap: 10px; */
   
   }
   .parent2{
-      margin: 20px;
+      margin: 10px;
       height: 40vh;
       display: grid;
       grid-template-columns: 75% 25%;
       gap: 30px;
-  }
-  .par-child1{
-      /* background-color: bisque; */
-      height: 40vh;
+      margin-top: 40px;
   }
   .par-child2{
-       /* background-color: red;  */
-      /* gap: 100px; */
+       /* background-color: #E0A96D; */
       height: 40vh;
+      margin-top: -20px;
       margin-left: 40px;
   }
   .par-child3{
-       height: 40vh; 
+       height: 30vh; 
+       margin-left: -130px;
+       width: 100%;
   }
   .ch1{
       /* background-color: aqua; */
@@ -190,15 +186,7 @@ background-color: var(--bg-black-50);
   .par-child5{
   
       height: 40vh;
-  }
-  
-  /* .insight{
-      display: grid; 
-      grid-template-columns: repeat(5, 1fr);
-      gap: 16px;
-      background-color: rgb(211, 132, 15);
-     
-   } */
+}
    .insight >div{
       border-radius: 10px;
       border: 1px solid var(--bg-black-50);
@@ -214,25 +202,35 @@ background-color: var(--bg-black-50);
       box-shadow: none;  
       
     }
+    .par-child1 .insight .middles{
+    
+        height: 32vh;
+        
+    }
     .insight >div .middle{
       display: flex;
       align-items: center;
       justify-content: space-around;
   }
-   .middles  h3{
-      /* margin: 1 rem 0.6rem; */
-      font-size:30px;
-      
+  .par-child1 .insight .middles  h3{
+      font-size:25px;
       color: #110b6d;
-      /* margin-top: -10px;  */
+      margin-top: -10px; 
   }
-  
+  .par-child1 .insight .middles h2{
+    margin-top: -15px;
+    
+  }
+  .par-child1 .insight .middles h5{
+    color: #110b6d; 
+    margin-top: -10px;
+  }
    .insight .progress{
         width: 92px;
         position: relative;
         height: 92px;
         border-radius: 50%;
-        padding-top: 20px;
+        padding-top: 2px;
         padding-left: 150px;
   }
    .insight svg{
@@ -264,39 +262,46 @@ background-color: var(--bg-black-50);
       align-items: center;
     font-size: 18px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-left: 120px;
+    margin-top: -10px;
+    margin-left: 80px;
   }
-  .income{
+  .income .middle{
       border-radius: 10px;
       border: 1px solid var(--bg-black-50);
       box-shadow: 0 0 20px rgb(196, 192, 192);  
       /* margin-top: 20px; */
       background-color: white;
       transition: all 300ms ease;
-      padding: 10px;
-      height: 18vh;
-  
+      margin-top: -3px;
+      height: 20vh;
+width: 100%;
+font-size: 15px;
+margin: 20px;
+margin-left: -20px;
   }
-  .income:hover{
-      box-shadow: none;  
-      
-    }
-  .income .middle{
-      /* line-height: 5px; */
-      font-size: 20px;
+  .income .middle:hover{
+    box-shadow: none;  
   }
-  .left h3{
+  .income .middle .left h3{
       font-size: 15px;
       color: #2D3B6D;
+      padding-left: 20px;
+  }
+  .income .middle .left h2{
+    font-size: 20px;
+   margin-top: -15px;
+   padding-left: 20px;
   }
   .numbers{
       padding-left: 200px;
       color:#FFA800 ;
+      margin-top: -10px;
   }
   .income .middle h5{
       color: #2D3B6D;
       font-size: 14px;
+      margin-top: -15px;
+      padding-left: 20px;
   }
   .balance .updates{
       background-color: white;
@@ -305,28 +310,30 @@ background-color: var(--bg-black-50);
       box-shadow: 0 0 20px rgb(196, 192, 192);  
      padding: 20px;
       transition: all 300ms ease;
-      height: 38vh;
+      height: 35vh;
       width: 93%;
-     margin-left: 110px;
+     margin-left: 120px;
     }
     .balance .updates:hover{
       box-shadow: none;
     }
    .balance .updates h2{
       color: #110b6d;
+      margin-top: -10px;
     }
     .balance .updates h3{
-      margin-top: -10px;
+      margin-top: -15px;
       font-size: 30px;
       font-weight: 900;
     }
-     .balance .updates .message span{
+     .balance .updates .message span b{
       color: #2D3B6D;
       font-weight: bold;
+    
     }
    .balance .updates .message  p{
-      padding-top: 10px;
-      font-size: 20px;
+      padding-top: 4px;
+      font-size: 15px;
       font-family: "poppins";
     }
     .recent-month{
@@ -345,7 +352,7 @@ background-color: var(--bg-black-50);
       box-shadow: 0 0 20px rgb(196, 192, 192);  
       text-align: center;
       margin-top: -20px;
-      width: 85%;
+      width: 80%;
   }
   .recent-month table th{
     font-weight: bold;
@@ -369,11 +376,11 @@ background-color: var(--bg-black-50);
       border-radius: 10px;
       border: 1px solid var(--bg-black-50);
       box-shadow: 0 0 20px rgb(196, 192, 192);  
-      margin-left:-130px;
+      margin-left: -160px;
       transition: all 300ms ease;
-     
-      /* height: 47vh; */
-      /* width: 30rem; */
+     margin-top: -50px;
+      height: 48vh;
+      width: 55vh;
       padding: 10px;
     }
    .team .updates:hover{
@@ -387,8 +394,8 @@ background-color: var(--bg-black-50);
       font-weight: bold;
     }
    .team .updates .message  p{
-      padding-top: 20px;
-      font-size: 20px;
+      padding-top: 15px;
+      font-size: 15px;
       font-family: "poppins";
     }
      .join-btn{
@@ -406,6 +413,12 @@ background-color: var(--bg-black-50);
     }
   
   
+  
+  
+  
+  
+  
+    
   
   
   
