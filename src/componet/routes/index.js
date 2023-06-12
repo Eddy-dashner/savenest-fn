@@ -6,7 +6,8 @@ import Signin from "../../pages/signup/signin";
 import Dashboard from "../../pages/dashboard";
 // import Savingacc from "../../pages/saving-account";
 // import Dashboardhome from "../../pages/dashboard/index";
-// import Records from "../../pages/session-record/session";
+import Records from "../../pages/session-record/session";
+import RecordIncome from "../../pages/session-record/getincome";
 
 const Index = () => {
   return (
@@ -15,9 +16,10 @@ const Index = () => {
       <Route path="/signup.js" element={<Signup />} />
       <Route path="/signin.js" element={<Signin />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/recording" element={<RecordIncome />} />
       {/* <Route path="/dashhome" element={<Dashboardhome />} /> */}
       {/* <Route path="/savingacc" element={<Savingacc />} /> */}
-      {/* <Route path="/record" element={<Records />} /> */}
+      <Route path="/record" element={<Records />} />
     </Routes>
   );
 };

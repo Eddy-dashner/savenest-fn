@@ -18,6 +18,8 @@ import { MdOutlineArrowForward } from "react-icons/md";
 import { MdOutlineMenu } from "react-icons/md";
 import { GrFormClose } from "react-icons/gr";
 import { allData, testData } from "../../constants/index";
+import { Link } from "react-router-dom";
+// import Indexs from "../../componet/routes";
 
 function Home() {
   const [visible, setVisible] = useState(false);
@@ -93,7 +95,9 @@ function Home() {
           </ul>
         </div>
         <div className="savenest-signin">
-          <Button btnName="SignIn"></Button>
+          <Link to="/signup.js">
+            <Button btnName="SignIn"></Button>
+          </Link>
         </div>
         <div className="savenest-humberger">
           {!visible && <MdOutlineMenu onClick={() => setVisible(true)} />}

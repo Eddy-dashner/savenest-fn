@@ -101,7 +101,6 @@ Button:hover {
   border: 2px solid #e0a96d;
   color: #e0a96d;
   background-color: white;
-  transition: 01s;
   cursor: pointer;
 }
 .savenest-intro {
