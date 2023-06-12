@@ -31,12 +31,12 @@ export const testData = [
       "Thanks to this saving website, I've transformed my financial habits and achieved my savings goals faster than ever before. It's an essential tool for anyone looking to take control of their finances and build a brighter financial future.",
     name: "Kelly Mons",
   },
-  {
-    id: 2,
-    image:
-      "https://images.pexels.com/photos/927451/pexels-photo-927451.jpeg?auto=compress&cs=tinysrgb&w=600",
-    description:
-      "Thanks to this saving website, I've transformed my financial habits and achieved my savings goals faster than ever before. It's an essential tool for anyone looking to take control of their finances and build a brighter financial future.",
-    name: "Kind lay",
-  },
+  // {
+  //   id: 2,
+  //   image:
+  //     "https://images.pexels.com/photos/927451/pexels-photo-927451.jpeg?auto=compress&cs=tinysrgb&w=600",
+  //   description:
+  //     "Thanks to this saving website, I've transformed my financial habits and achieved my savings goals faster than ever before. It's an essential tool for anyone looking to take control of their finances and build a brighter financial future.",
+  //   name: "Kind lay",
+  // },
 ];

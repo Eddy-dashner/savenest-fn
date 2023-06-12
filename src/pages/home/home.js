@@ -24,7 +24,12 @@ function Home() {
   // const [currentCard, setCurrentCard] = useState(1);
 
   //sliding testimonial section
+  const [cards, setCards] = useState([]);
   const [slideIndex, setSlideIndex] = useState(0);
+
+  useEffect(() => {
+    setCards(testData);
+  }, []);
 
   const settings = {
     dots: false,
@@ -33,14 +38,12 @@ function Home() {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: slideIndex,
+    autoplay: true,
+    autoplaySpeed: 30, // Set the duration between slides in milliseconds
     afterChange: (current) => setSlideIndex(current),
-    autoplay: true, // Enable automatic sliding
-    autoplaySpeed: 3000,
   };
 
-  const handleSlideClick = (index) => {
-    setSlideIndex(index);
-  };
+  //hereeee
 
   const sectionRefs = useRef([]);
 
@@ -99,14 +102,14 @@ function Home() {
       </div>
       {visible && (
         <div className="semi-nav">
-          <ul>
-            <li>
+          <ul className="semi-nav-list">
+            <li className="semi-nav-link">
               <a href="#home">Home</a>
             </li>
-            <li>
+            <li className="semi-nav-link">
               <a href="#about">Who we are</a>
             </li>
-            <li>
+            <li className="semi-nav-link">
               <a href="#connect">Connect</a>
             </li>
           </ul>
@@ -179,37 +182,37 @@ function Home() {
         ref={(ref) => (sectionRefs.current[2] = ref)}
       >
         <h1 className="home-test-header">Testimonials</h1>
-        <div className="testimonial-home-intro" {...settings}>
-          {testData.map((test) => (
-            <div className="all-home-test" key={testData.id}>
-              <div className="test-image">
-                <img src={test.image} />
+        <slider {...settings}>
+          <div className="testimonial-home-intro">
+            {testData.map((test) => (
+              <div className="all-home-test" key={testData.id}>
+                <div className="test-image">
+                  <img src={test.image} />
+                </div>
+                <div className="test-descri">
+                  <p className="test-descri-para">{test.description}</p>
+                  <br />
+                  <h4 className="test-descri-head">{test.name}</h4>
+                </div>
+                <div className="test-home-icon">
+                  <span>
+                    <MdArrowForwardIos />
+                  </span>
+                  <span>
+                    <MdArrowBackIosNew />
+                  </span>
+                </div>
               </div>
-              <div className="test-descri">
-                <p className="test-descri-para">{test.description}</p>
-                <br />
-                <h4 className="test-descri-head">{test.name}</h4>
-              </div>
-              <div className="test-home-icon">
-                <span>
-                  <MdArrowForwardIos
-                    onClick={() => handleSlideClick(testData.id - 1)}
-                  />
-                </span>
-                <span>
-                  <MdArrowBackIosNew />
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </slider>
       </div>
       <div
         className="savenest-home-contact slide-up"
         id="connect"
         ref={(ref) => (sectionRefs.current[3] = ref)}
       >
-        <h1>Connect with us</h1>
+        <h1 className="home-contact-header">Connect with us</h1>
         <div className="both-savenest">
           <div className="contact-home-info">
             <h2 className="contact-home-head">
@@ -252,7 +255,7 @@ function Home() {
         </div>
       </div>
       <div className="savenest-footer">
-        <h1>SaveNest</h1>
+        <h1 className="footer-home-header">SaveNest</h1>
         <p className="par-foot">
           Start saving and secure your financial future. Our saving website is
           here to help <br /> you achieve your money-saving goals.

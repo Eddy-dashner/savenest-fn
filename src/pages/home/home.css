@@ -70,21 +70,22 @@
   margin-top: 68px;
   background-color: #f9f3ed;
   position: fixed;
+  z-index: 1;
   display: flex;
   justify-content: center;
 }
-.semi-nav ul {
+.semi-nav .semi-nav-list {
   list-style-type: none;
 }
-.semi-nav ul li {
+.semi-nav .semi-nav-list .semi-nav-link {
   margin: 45px;
 }
-.semi-nav ul li a {
+.semi-nav .semi-nav-list .semi-nav-link a {
   text-decoration: none;
   font-weight: bold;
   color: black;
 }
-.semi-nav ul li a:hover {
+.semi-nav .semi-nav-list .semi-nav-link a:hover {
   color: #e0a96d;
 }
 Button {
@@ -236,7 +237,7 @@ Button:hover {
 .savenest-home-test {
   padding: 25px 35px;
 }
-.savenest-home-test h1 {
+.savenest-home-test .home-test-header {
   display: flex;
   justify-content: center;
   color: #e0a96d;
@@ -294,7 +295,7 @@ Button:hover {
 .savenest-home-contact {
   padding: 10px 40px 40px 40px;
 }
-.savenest-home-contact h1 {
+.savenest-home-contact .home-contact-header {
   text-align: center;
   color: #e0a96d;
   font-size: 23px;
@@ -361,12 +362,12 @@ Button:hover {
   border-radius: 80px 0 0 0;
   text-align: center;
 }
-.savenest-footer h1 {
+.savenest-footer .footer-home-header {
   color: #e0a96d;
   font-size: 23px;
   margin-bottom: 20px;
 }
-.savenest-footer p {
+.savenest-footer .par-foot {
   margin-bottom: 20px;
 }
 .savenest-footer .footer-icons {
