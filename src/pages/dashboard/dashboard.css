@@ -5,6 +5,13 @@
   --tex-black-900: #302e4d;
   --tex-black-700: #504e70;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .record-sectionone {
   justify-content: center;
   align-items: center;
@@ -59,23 +66,12 @@
 }
 .dash-container {
   user-select: none;
-  height: 140vh;
-  /* width: 100%; */
-  display: grid;
-  /* grid-template-columns: 20% 80%; */
-  /* padding: 10px; */
-  margin-left: 10px;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .dashboard-cont {
-  /* background-color: red; */
   display: grid;
   position: fixed;
-  z-index: 1;
   width: 20%;
-
   height: 100%;
 }
 
@@ -85,15 +81,11 @@ aside .sidebar a {
   list-style: none;
   /* background-color: red; */
 }
-.top .logo img {
-  display: block;
-  /* width: 100%; */
-}
+
 aside {
   height: 100vh;
-  background-color: #ffff;
-
-  /* background-color: #2d3b6d; */
+  width: 100%;
+  box-shadow: 0 0 1px rgb(196, 192, 192);
 }
 aside .top {
   /* background-color: #504e70; */
@@ -102,9 +94,8 @@ aside .top {
   padding-top: 20px;
 }
 aside .logo img {
-  width: 100px;
+  width: 130px;
   height: 100px;
-  /* padding-left: 40px;   */
 }
 aside .logo {
   display: flex;
@@ -168,11 +159,8 @@ aside .sidebar a {
 }
 .dash-container .parent {
   background-color: var(--bg-black-50);
-  height: 100%;
-  padding: 10px;
-  width: 77%;
-  /* width: 80%; */
-  margin-left: 290px;
+  padding: 20px;
+  width: 100%;
 }
 .parent1 {
   margin: 10px;
@@ -227,7 +215,6 @@ aside .sidebar a {
   padding: 30px;
   height: 38vh;
   width: 52vh;
-
 }
 .insight > div:hover {
   box-shadow: none;
@@ -291,7 +278,6 @@ aside .sidebar a {
   font-weight: bold;
   margin-top: -5px;
   margin-left: 120px;
-  
 }
 .income .middle {
   border-radius: 10px;
