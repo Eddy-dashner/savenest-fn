@@ -8,7 +8,9 @@ import Dashboard from "../../pages/dashboard/index";
 import Dashboardhome from "../../pages/dashboard/index";
 import Records from "../../pages/session-record/session";
 import RecordIncome from "../../pages/session-record/getincome";
-import Goal from "../../pages/GoalSection/goal";
+// import Goal from "../../pages/GoalSection/goal";
+import Viewgoal from "../../pages/GoalSection/viewgoal";
+import Setgoal from "../../pages/GoalSection/setgoal";
 
 const Index = () => {
   return (
@@ -21,7 +23,9 @@ const Index = () => {
       <Route path="/dashhome" element={<Dashboardhome />} />
       {/* <Route path="/savingacc" element={<Savingacc />} /> */}
       <Route path="/record" element={<Records />} />
-      <Route path="/goal" element={<Goal />} />
+      {/* <Route path="/goal" element={<Goal />} /> */}
+      <Route path="viewgoal" element={<Viewgoal />} />
+      <Route path="setgoal" element={<Setgoal />} />
     </Routes>
   );
 };
