@@ -2,8 +2,19 @@
   margin: 0;
 }
 .div {
-  width: 100%;
+
+  width: 75%;
+  /* font-family: poppins; */
+  margin-left: 350px;
+/*   width: 100%; */
   font-family: poppins;
+
+}
+.al h3{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgba(224, 169, 109, 1);
 }
 .al th {
   padding-right: 40px;
@@ -59,17 +70,25 @@ li {
 }
 .second ul,
 li {
+ 
+  color: black;
   list-style: none;
   display: flex;
   padding: 10px 100px;
   justify-content: space-between;
+  font-weight: bold;
 }
+.second ul li:hover{
+  background-color: white;
+  color:rgba(224, 169, 109, 1) ;
+}
+
 .second a {
   text-decoration: none;
   color: black;
 }
 .second {
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .second li:hover {
   background-color: rgba(128, 128, 128, 0.082);
