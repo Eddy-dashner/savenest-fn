@@ -9,11 +9,14 @@ import Dashboardhome from "../../pages/dashboard/index";
 import Records from "../../pages/session-record/session";
 import RecordIncome from "../../pages/session-record/getincome";
 import Goal from "../../pages/GoalSection/goal";
-
+import Expenses from "../../pages/expense/Expenses";
+import Balance from "../../pages/balance/Balance";
 const Index = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/expenses" element={<Expenses />} />
+      <Route path="/balance" element={<Balance/>} />
       <Route path="/signup.js" element={<Signup />} />
       <Route path="/signin.js" element={<Signin />} />
       <Route path="/dashboard" element={<Dashboard />} />
