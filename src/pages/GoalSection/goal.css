@@ -1,4 +1,84 @@
-.goal-container {
-  margin-left: 500px;
-  background-color: red;
+.goal-navbar {
+  background-color: white;
+  width: 100%;
+  display: grid;
+}
+.goal-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.6fr;
+}
+.goal-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.goal-list Link .goal-link a {
+  text-decoration: none;
+}
+.goal-setgoal {
+  height: 660px;
+}
+.goal-setgoal .setgoal-header {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+.formAll {
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goal-setgoal .form-setgoal {
+  padding: 40px;
+}
+.goal-setgoal .form-setgoal input {
+  box-shadow: 5px 5px 5px #918f8f;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  margin-bottom: 20px;
+  color: black;
+}
+.goal-setgoal .form-setgoal textarea {
+  box-shadow: 5px 5px 5px #918f8f;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  margin-bottom: 20px;
+}
+.viewgoalAll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  background-color: rgb(235, 235, 235);
+}
+.viewgoal-search {
+  margin-bottom: 20px;
+}
+.viewgoal-search input {
+  box-shadow: 2px 2px 2px #918f8f;
+  margin-right: 20px;
+  padding: 10px;
+  width: 90%;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  margin-bottom: 20px;
+  color: black;
+}
+.viewgoal-page {
+  height: 620px;
+}
+.viewgoal-page th {
+  padding: 10px 20px;
+  background-color: rgb(212, 212, 212);
 }

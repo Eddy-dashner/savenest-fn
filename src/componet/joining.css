@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.Joining-container{
+    height: 100vh;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+}
+.picture-one {
+    background-image: url(../pages/home/images/3.png);
+    width:650px;
+    margin-left: 40px;
+    height:320px;
+    background-repeat: no-repeat;
+}
+.cardsTeam img{
+    height: 150px;
+    object-fit:fill;
+    width: 100%;
+}
+.Create-team form input{
+    width: 450px;
+    height: 40px;
+    box-shadow: 5px 5px 5px #918f8f;
+    border:1px solid #D9D9D9;
+    outline: none;
+    margin-bottom: 20px;
+}
+.Create-team h1{
+   color: #E0A96D;
+   padding-bottom: 20px;
+   font-weight:bolder;
+   
+}
+.Create-team{
+    padding-left: 100px;
+}
+form select{
+    width: 70px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+form input::placeholder{
+    padding-left: 15px;
+    color: black;
+}
+.head-card{
+    color:#E0A96D;
+    text-align: center;
+    font-weight: bolder;
+    padding-top:30px;
+    padding-bottom: 40px;
+}
+.cardsTeam{
+    width: 27%;
+    height: 470px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 5px 5px 15px #D9D9D9;
+    margin:20px 40px 10px 40px;
+    padding: 10px 30px 10px 30px;
+}
+.cardsTeam h1{
+    text-align: center;
+    color: black;
+}
+.All-btn{
+    margin-left:130px;
+}
+.cardsTeam button{
+    margin-top: 20px;
+}
+.whole-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

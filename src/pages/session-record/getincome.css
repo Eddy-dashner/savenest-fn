@@ -2,9 +2,13 @@
   margin: 0;
 }
 .div {
+
   width: 75%;
   /* font-family: poppins; */
   margin-left: 350px;
+/*   width: 100%; */
+  font-family: poppins;
+
 }
 .al h3{
   display: flex;

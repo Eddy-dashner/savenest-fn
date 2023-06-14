@@ -40,6 +40,7 @@ export const testData = [
   //   name: "Kind lay",
   // },
 ];
+
 export const IncomeDetail=[
   {
     SOURCE :"Salary",
@@ -153,3 +154,35 @@ export const IncomeDetail=[
         AMOUNT :"400$",
       } 
     ]
+
+
+// export const tableData = [
+//   {
+//     title:
+//   }
+// ]
+
+ export const teamCards=[
+  {
+   heading:"Team one", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+   par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join"
+  },
+  { heading:"Team two", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+  par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join"
+       },
+  { heading:"Team three", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+  par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join "
+   },
+  { heading:"Team four", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+   par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join"
+  },
+  { heading:"Team five", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+   par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join"
+   }, 
+   { heading:"Team six", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+    par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join"
+   } , 
+        
+  ]
+
+
