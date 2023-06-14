@@ -12,6 +12,7 @@ import Goal from "../../pages/GoalSection/goal";
 import Joining from "../joining";
 import Cooperative from "../cooperative";
 
+
 const Index = () => {
   return (
     <Routes>
@@ -25,7 +26,9 @@ const Index = () => {
       <Route path="/dashhome" element={<Dashboardhome />} />
       {/* <Route path="/savingacc" element={<Savingacc />} /> */}
       <Route path="/record" element={<Records />} />
-      <Route path="/goal" element={<Goal />} />
+      {/* <Route path="/goal" element={<Goal />} /> */}
+      <Route path="viewgoal" element={<Viewgoal />} />
+      <Route path="setgoal" element={<Setgoal />} />
     </Routes>
   );
 };

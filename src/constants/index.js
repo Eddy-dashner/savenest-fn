@@ -40,6 +40,13 @@ export const testData = [
   //   name: "Kind lay",
   // },
 ];
+
+// export const tableData = [
+//   {
+//     title:
+//   }
+// ]
+
  export const teamCards=[
   {
    heading:"Team one", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
@@ -62,3 +69,4 @@ export const testData = [
    } , 
         
   ]
+
