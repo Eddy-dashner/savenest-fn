@@ -1,5 +1,7 @@
 import React from "react";
 import "../dashboard/dashboard.css";
+import { Link } from "react-router-dom";
+// import Joining from "../../componet/joining";
 // import logo1 from "../dashboard/images/logo1.png";
 // import logo2 from "../dashboard/images/logo2.jpg"
 // import {GrMenu} from 'react-icons/gr'
@@ -158,9 +160,10 @@ const Index = () => {
                     </p>
 
                     <p>What are you waiting of join our team now!</p>
+                    <Link to="/joining.js">
                     <button className="join-btn">
                       Join team <AiOutlineArrowRight />
-                    </button>
+                    </button></Link>
                   </div>
                 </div>
               </div>

@@ -9,11 +9,15 @@ import Dashboardhome from "../../pages/dashboard/index";
 import Records from "../../pages/session-record/session";
 import RecordIncome from "../../pages/session-record/getincome";
 import Goal from "../../pages/GoalSection/goal";
+import Joining from "../joining";
+import Cooperative from "../cooperative";
 
 const Index = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/joining.js" element={<Joining />} />
+      <Route path="/Cooperative.js" element={<Cooperative />} />
       <Route path="/signup.js" element={<Signup />} />
       <Route path="/signin.js" element={<Signin />} />
       <Route path="/dashboard" element={<Dashboard />} />
