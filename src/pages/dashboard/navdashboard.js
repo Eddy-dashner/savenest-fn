@@ -91,11 +91,18 @@ function Navdashboard() {
                 <div className="record-nav">
                   <ul className="record-nav-list">
                     <li className="record-nav-link">
-                      <Link to="/record">All Session</Link>
+                      <Link to="/recording">Income</Link>
                     </li>
                     <li className="record-nav-link">
-                      <Link to="/recording">Incomes</Link>
+                      <Link to="/expenses">Expensee</Link>
                     </li>
+                    <li className="record-nav-link">
+                      <Link to="/goals">Goals</Link>
+                    </li>
+                    <li className="record-nav-link">
+                      <Link to="/balance">Balance</Link>
+                    </li>
+                    
                   </ul>
                 </div>
               )}
