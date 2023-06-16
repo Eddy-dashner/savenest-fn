@@ -71,7 +71,7 @@ Monthly savings goal: [Goal]<br></br>
 Percentage of goal achieved: [Percentage]<br></br><br></br>
 Your dedication and commitment to saving are commendable. Keep up the good work and continue building a secure financial future!
 
-Remember, consistent saving habits lead to long-term financial stability. Don't hesitate to explore additional features and resources in the app to optimize your savings strategy.<br></br>
+Remember, consistent saving habits lead to long-term financial stability.Don't hesitate to explore additional features and resources in the app to optimize your savings strategy.<br></br>
 
 Thank you for trusting our savings app to help you on your journey to financial success. We look forward to seeing your progress next month!"
 
