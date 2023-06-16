@@ -61,14 +61,18 @@ function Navdashboard() {
                   <ul className="myaccount-nav-list">
                     <li className="myaccount-nav-link">
                       <Link to="/record">
-                        <a>Incomes</a>
+                        <a>Add Incomes</a>
                       </Link>
                     </li>
                     <li className="myaccount-nav-link">
-                      <Link to="/recording">Expenses</Link>
+                      <Link to="/addexpense"> Add Expenses</Link>
                     </li>
+
                     <li className="myaccount-nav-link">
-                      <Link to="/balance">Balance</Link>
+                      <Link to="/recording">Balance</Link>
+
+                    <li className="myaccount-nav-link">
+
                     </li>
                   </ul>
                 </div>

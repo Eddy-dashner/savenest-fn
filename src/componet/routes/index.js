@@ -8,12 +8,19 @@ import Dashboardhome from "../../pages/dashboard/index";
 import Records from "../../pages/session-record/session";
 import RecordIncome from "../../pages/session-record/getincome";
 
+// import Goal from "../../pages/GoalSection/goal";
+
+
 import Viewgoal from "../../pages/GoalSection/viewgoal";
 import Setgoal from "../../pages/GoalSection/setgoal";
 import Joining from "../joining";
 import Cooperative from "../cooperative";
+
+import Addexpense from "../../pages/addexpenses/Addexpense";
+
 import Balance from "../../pages/myAccount/balance";
 import Expenses from "../../pages/expense/Expenses";
+
 
 
 const Index = () => {
@@ -31,8 +38,14 @@ const Index = () => {
       <Route path="/dashhome" element={<Dashboardhome />} />
       <Route path="/balance" element={<Balance />} />
       <Route path="/record" element={<Records />} />
+
+      {/* <Route path="/goal" element={<Goal />} /> */}
+     
+      <Route path="/addexpense" element={<Addexpense />}/>
+
       <Route path="/viewgoal" element={<Viewgoal />} />
       <Route path="/setgoal" element={<Setgoal />} />
+
     </Routes>
   );
 };

@@ -160,8 +160,10 @@ aside .sidebar a {
 .dash-container .parent {
   background-color: var(--bg-black-50);
   padding: 20px;
+
   width: 100%;
 }
+
 .parent1 {
   margin: 10px;
   height: 50vh;
@@ -424,5 +426,5 @@ table tbody tr:last-child td {
   border-radius: 40px;
   font-family: "poppins";
   font-size: 20px; */
-  cursor: pointer;
-}
+  cursor: pointer;}
+  
