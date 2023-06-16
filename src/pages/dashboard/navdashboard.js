@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Imge from "./images/logo.png";
 import "../dashboard/dashboard.css";
 import { GrClose } from "react-icons/gr";
 import { MdDashboard } from "react-icons/md";
@@ -9,9 +10,6 @@ import { VscRecordKeys } from "react-icons/vsc";
 import { AiFillSetting } from "react-icons/ai";
 import { TbLogout } from "react-icons/tb";
 import { AiOutlineArrowDown } from "react-icons/ai";
-import { LuMenu } from "react-icons/lu";
-import { BsSun } from "react-icons/bs";
-import { MdDarkMode } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 function Navdashboard() {
@@ -23,7 +21,7 @@ function Navdashboard() {
         <aside>
           <div className="top">
             <div className="logo">
-              {/* <img src={logo1} alt="my logo" /> */}
+              <img src={Imge} alt="my logo" />
             </div>
             <div className="close">
               <span>
@@ -69,11 +67,12 @@ function Navdashboard() {
                     <li className="myaccount-nav-link">
                       <Link to="/addexpense"> Add Expenses</Link>
                     </li>
-                    {/* <li className="myaccount-nav-link">
-                      <Link to="/recording">Save</Link>
-                    </li> */}
+
                     <li className="myaccount-nav-link">
                       <Link to="/recording">Balance</Link>
+
+                    <li className="myaccount-nav-link">
+
                     </li>
                   </ul>
                 </div>
@@ -81,7 +80,7 @@ function Navdashboard() {
             </a>
             <a href="#">
               <GiStairsGoal />
-              <Link to="/goal">
+              <Link to="/setgoal">
                 <h3>Goals</h3>
               </Link>
             </a>

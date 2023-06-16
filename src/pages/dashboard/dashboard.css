@@ -81,10 +81,7 @@ aside .sidebar a {
   list-style: none;
   /* background-color: red; */
 }
-.top .logo img {
-  display: block;
-  /* width: 100%; */
-}
+
 aside {
   height: 100vh;
   width: 100%;
@@ -97,9 +94,8 @@ aside .top {
   padding-top: 20px;
 }
 aside .logo img {
-  width: 100px;
+  width: 130px;
   height: 100px;
-  /* padding-left: 40px;   */
 }
 aside .logo {
   display: flex;
@@ -164,7 +160,10 @@ aside .sidebar a {
 .dash-container .parent {
   background-color: var(--bg-black-50);
   padding: 20px;
-  width: 100%;}
+
+  width: 100%;
+}
+
 .parent1 {
   margin: 10px;
   height: 50vh;
@@ -218,7 +217,6 @@ aside .sidebar a {
   padding: 30px;
   height: 38vh;
   width: 52vh;
-
 }
 .insight > div:hover {
   box-shadow: none;
@@ -282,7 +280,6 @@ aside .sidebar a {
   font-weight: bold;
   margin-top: -5px;
   margin-left: 120px;
-  
 }
 .income .middle {
   border-radius: 10px;
