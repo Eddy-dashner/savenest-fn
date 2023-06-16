@@ -1,0 +1,46 @@
+.balance-page {
+  display: grid;
+  grid-template-rows: 0.6fr 0.8fr 0.2fr 1fr;
+  height: 100vh;
+}
+.balance-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.balance-description .balance-intro {
+  width: 70%;
+  color: #e0a96d;
+  font-weight: bold;
+  font-size: 20px;
+}
+.balance-amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.balance-amount .balance-par {
+  font-size: 30px;
+  font-weight: bold;
+}
+.balance-amount .balance-par span {
+  color: #e0a96d;
+}
+.balance-btn {
+  display: flex;
+  justify-content: center;
+}
+.balance-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.balance-show form input {
+  box-shadow: 5px 5px 5px #918f8f;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  margin-bottom: 20px;
+  color: black;
+}

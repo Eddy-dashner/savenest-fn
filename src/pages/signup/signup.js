@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./signup.css";
 import { ToastContainer, toast, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 // import Button from "../../properties/Button";
 
 function Signup() {
@@ -154,12 +155,15 @@ function Signup() {
                 <label>I Agree to the terms and conditions of use.</label>
                 <br />
               </div>
-              <input
-                type="submit"
-                value={name}
-                id="signup-btn"
-                onClick={handleSubmit}
-              />
+              <Link to="/dashboard">
+                {" "}
+                <input
+                  type="submit"
+                  value={name}
+                  id="signup-btn"
+                  onClick={handleSubmit}
+                />
+              </Link>
               {/* <Button btnName="Submit"></Button> */}
               <ToastContainer
                 transition={Flip}
