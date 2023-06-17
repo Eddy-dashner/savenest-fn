@@ -49,23 +49,23 @@ export const testData = [
 
  export const teamCards=[
   {
-   heading:"Team one", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
-   par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join"
+   heading:"Team one", 
+   par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
   },
-  { heading:"Team two", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
-  par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join"
+  { heading:"Team two", 
+  par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
        },
-  { heading:"Team three", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
-  par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join "
+  { heading:"Team three", 
+  par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
    },
-  { heading:"Team four", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
-   par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join"
+  { heading:"Team four", 
+   par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
   },
-  { heading:"Team five", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
-   par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join"
+  { heading:"Team five", 
+   par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
    }, 
-   { heading:"Team six", Picture:"https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
-    par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join"
+   { heading:"Team six", 
+    par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
    } , 
         
   ]
