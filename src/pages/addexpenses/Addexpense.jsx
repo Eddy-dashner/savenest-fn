@@ -1,27 +1,30 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import Button from '../../properties/Button'
-import DashboardLayout from '../../componet/DashboardLayout'
-import "../addexpenses/addexpense.css"
+import React from "react";
+import { Link } from "react-router-dom";
+import Button from "../../properties/Button";
+import DashboardLayout from "../../componet/DashboardLayout";
+import "../addexpenses/addexpense.css";
 function Addexpense() {
   return (
-    <DashboardLayout>
-    <div className='addnew'>
-        <div className='addexpense'>
+    <div className="containerAddexpense">
+      <DashboardLayout>
+        <div className="addnew">
+          <div className="addexpense">
             <h2>ADD EXPENSE</h2>
-            <input type='text' placeholder='Expense type'></input>
-            <input type='text' placeholder='Amount spent'></input>
-            <div className='addbtn'>
-            <Link to="/expenses">
-            <Button btnName="SAVE"></Button>
-          </Link>
-          <Button btnName="ADD NEW"></Button>
+            <input type="text" placeholder="Expense type" />
+            <br />
+            <input type="text" placeholder="Amount spent" />
+            <br />
+            <input type="text" placeholder="Period" />
+            <div className="addbtn">
+              <Link to="/expenses">
+                <Button btnName="SAVE"></Button>
+              </Link>
+            </div>
           </div>
         </div>
-
+      </DashboardLayout>
     </div>
-    </DashboardLayout>
-  )
+  );
 }
 
-export default Addexpense
+export default Addexpense;

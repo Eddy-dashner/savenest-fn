@@ -17,16 +17,14 @@
   align-items: center;
   font-size: 20px;
   cursor: pointer;
-}
-.record-nav {
-  background-color: red;
+  margin-top: 6px;
 }
 .record-nav {
   width: 200px;
-  margin-top: 180px;
+  margin-top: 350px;
   padding: 0;
   background-color: #ffffff;
-  box-shadow: 2px 2px 2px 2px grey;
+  border: 1px solid #d9d9d9;
   position: fixed;
   z-index: 1;
   display: flex;
@@ -44,13 +42,14 @@
   align-items: center;
   font-size: 20px;
   cursor: pointer;
+  margin-top: 6px;
 }
 .myaccount-nav {
   width: 200px;
-  margin-top: 330px;
+  margin-top: 280px;
   padding: 0;
   background-color: #ffffff;
-  box-shadow: 2px 2px 2px 2px grey;
+  border: 1px solid #d9d9d9;
   position: fixed;
   z-index: 1;
   display: flex;
@@ -64,6 +63,7 @@
   color: white;
   width: 100%;
 }
+
 .dash-container {
   user-select: none;
 }
@@ -129,16 +129,24 @@ aside .sidebar a {
   /* background-color: #E0A96D; */
 }
 .dashboard-cont .sidebar .active {
-  background-color: #e0a96d;
+  color: #e0a96d;
   border-radius: 20px;
   text-align: center;
-  justify-content: center;
 }
-.active span {
-  color: whitesmoke;
+
+.sidebar .sub-titlenav:hover h3 {
+  color: #e0a96d;
+  border-radius: 30px;
+}
+.sidebar .sub-titlenav .sideIcons {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.sidebar .sub-titlenav:hover .sideIcons {
+  color: #e0a96d;
 }
 .active h2 {
-  color: whitesmoke;
+  color: #e0a96d;
 }
 .sidebar a:hover {
   color: #ffa800;
@@ -148,19 +156,18 @@ aside .sidebar a {
 }
 .date input {
   display: inline-block;
-  background-color: white;
+  outline: none;
   border-radius: 5px;
   border: none;
-  margin-top: -5px;
+  margin: 20px;
   padding: 5px 16px;
   font-size: 15px;
   width: 63%;
   height: 30px;
 }
 .dash-container .parent {
-  background-color: var(--bg-black-50);
   padding: 20px;
-
+  background-color: rgb(235, 235, 235);
   width: 100%;
 }
 
@@ -196,8 +203,7 @@ aside .sidebar a {
   width: 42vh;
 }
 .ch2 {
-  /* background-color: green; */
-  margin-top: 70px;
+  margin-top: 85px;
   height: 10vh;
   width: 42vh;
 }
@@ -396,7 +402,7 @@ table tbody tr:last-child td {
   margin-left: -160px;
   transition: all 300ms ease;
   margin-top: -45px;
-  height: 48vh;
+  height: 42vh;
   width: 55vh;
   padding: 10px;
 }
@@ -428,5 +434,36 @@ table tbody tr:last-child td {
   font-size: 20px; */
   cursor: pointer;
 }
-  
-
+.containerGoals .dashboard-cont .goalSection {
+  background-color: #e0a96d;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  border-radius: 20px;
+}
+.containerGoals .dashboard-cont .sub-titlenav:hover .goalSection {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e0a96d;
+}
+.containerViewgoal .dashboard-cont .goalSection {
+  background-color: #e0a96d;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  border-radius: 20px;
+}
+.containerViewgoal .dashboard-cont .sub-titlenav:hover .goalSection {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e0a96d;
+}
+.record-containerViewgoal .dashboard-cont .recordSection {
+  background-color: #e0a96d;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  border-radius: 20px;
+}
+.record-containerViewgoal .dashboard-cont .sub-titlenav:hover .recordSection {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e0a96d;
+}

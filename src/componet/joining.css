@@ -1,33 +1,34 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.joining{
-    display: block;
-    height: 100vh;
+.joining {
+  display: block;
+  height: 100vh;
 }
-.welcome{
-    position:fixed;
-    width: 80%;
-    background-color: white;
-    padding-top:15px;
-    text-align: center;
-    color: #E0A96D;
+.welcome {
+  position: fixed;
+  width: 80%;
+  background-color: white;
+  padding-top: 15px;
+  text-align: center;
+  color: #e0a96d;
 }
-.Joining-container{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 0.3fr 1fr;
+.Joining-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
 }
-.Joining-content{
-    background-color: rgb(240, 240, 240);
-    height: 100vh;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
+.Joining-content {
+  background-color: rgb(240, 240, 240);
+  height: 100vh;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
 }
 .picture-one {
+
     background-image: url(../pages/home/images/3.png);
     width:400px;
     height:320px;
@@ -156,4 +157,5 @@ form input::placeholder{
 padding: 0;
 background-color: white;
 color: black;
+
 }
