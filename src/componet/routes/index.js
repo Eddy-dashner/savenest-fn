@@ -6,18 +6,13 @@ import Signin from "../../pages/signup/signin";
 import Dashboard from "../../pages/dashboard/index";
 import Dashboardhome from "../../pages/dashboard/index";
 import Records from "../../pages/session-record/session";
-import RecordIncome from "../../pages/session-record/getincome";
-
-// import Goal from "../../pages/GoalSection/goal";
-
-
-import Viewgoal from "../../pages/GoalSection/viewgoal";
-import Setgoal from "../../pages/GoalSection/setgoal";
+import RecordIncome from "../../pages/session-record/getincome"
 import Joining from "../joining";
 import Cooperative from "../cooperative";
-
-import Addexpense from "../../pages/addexpenses/Addexpense";
-
+import Dashboard2 from "../dashboard2";
+import Viewgoal from "../../pages/GoalSection/viewgoal";
+import Setgoal from "../../pages/GoalSection/setgoal";
+import Addexpense from "../../pages/addexpenses/Addexpense"
 import Balance from "../../pages/myAccount/balance";
 import Expenses from "../../pages/expense/Expenses";
 
@@ -27,6 +22,8 @@ const Index = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+
+      <Route path="/Dash2" element={<Dashboard2 />} />
       <Route path="/expenses" element={<Expenses />} />
       <Route path="/balance" element={<Balance/>} />
       <Route path="/joining.js" element={<Joining />} />
@@ -38,15 +35,13 @@ const Index = () => {
       <Route path="/dashhome" element={<Dashboardhome />} />
       <Route path="/balance" element={<Balance />} />
       <Route path="/record" element={<Records />} />
-
-      {/* <Route path="/goal" element={<Goal />} /> */}
-     
+      <Route path="/goal" element={<Goal />} /> 
       <Route path="/addexpense" element={<Addexpense />}/>
 
       <Route path="/viewgoal" element={<Viewgoal />} />
       <Route path="/setgoal" element={<Setgoal />} />
 
     </Routes>
-  );
+  )
 };
 export default Index;
