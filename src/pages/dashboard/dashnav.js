@@ -1,7 +1,9 @@
 import React from "react";
 import "./dashnav.css";
 import { MdDashboard } from "react-icons/md";
-import Logo from "./images/logo.png";
+
+import Imge from "./images/logo.png";
+
 
 const Dashnav = () => {
   return (
@@ -10,7 +12,9 @@ const Dashnav = () => {
         <aside>
           <div className="top">
             <div className="logo">
-              <img src={Logo} alt="my logo" />
+
+            <img src={Imge} alt="my logo" />
+
             </div>
           </div>
           <div className="sidebar">

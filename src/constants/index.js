@@ -43,6 +43,7 @@ export const testData = [
 
 export const tableData = [
   {
+
     heading: "Team one",
     par: "Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",
     button: "Learn more",
@@ -80,6 +81,7 @@ export const tableData = [
   },
 ];
 export const putDataInTable = [
+
   {
     key: 1,
     title: "Buying a car ",
