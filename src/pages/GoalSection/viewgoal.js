@@ -25,11 +25,16 @@ function Viewgoal() {
                   <th>Goal Details</th>
                   <th>Action</th>
                 </tr>
-                {/* { tableData.map((row) => (
-             <tr>
-              <td>{row.title}</td>
-             </tr>
-            ))} */}
+                {tableData.map((row) => (
+                  <tr>
+                    <td>{row.title}</td>
+                    <td>{row.startingDate}</td>
+                    <td>{row.endingDate}</td>
+                    <td>{row.amount}</td>
+                    <td>{row.description}</td>
+                    <td></td>
+                  </tr>
+                ))}
               </table>
             </div>
           </div>

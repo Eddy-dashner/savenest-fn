@@ -1,13 +1,14 @@
 import React from "react";
 import "./getincome.css";
+import {Link} from "react-router-dom"
 import DashboardLayout from "../../componet/DashboardLayout";
-
+import {IncomeDetail} from "../../constants"
 function Getincome() {
   return (
     <DashboardLayout>
       <div className="div">
-        <h2>INCOME RECORDS</h2>
-        <div className="tile">
+        {/* <h2>INCOME RECORDS</h2> */}
+        {/* <div className="tile">
           <div className="t">
             <div>
               <h4>
@@ -39,10 +40,10 @@ function Getincome() {
           <div className="lie"></div>
           <h5>47 Sessions</h5>
           <p></p>
-        </div>
+        </div> */}
 
         <div>
-          <div className="oe">
+          {/* <div className="oe">
             <ul>
               <li>
                 <a href="/session">ALL SESSIONS</a>
@@ -51,9 +52,9 @@ function Getincome() {
                 <a href="/getincome">ACTIVITY LOG</a>
               </li>
             </ul>
-          </div>
+          </div> */}
 
-          <div className="twe">
+          {/* <div className="twe">
             <div className="iconic">
               {" "}
               <i class="bx bx-filter-alt"></i>
@@ -67,43 +68,49 @@ function Getincome() {
             <div className="nic">
               <p>Report Specific Filters</p> <i class="bx bxs-down-arrow"></i>
             </div>
-          </div>
+          </div> */}
           <br />
           <br />
           <div className="second">
             <ul>
               <li>Income</li>
-              <li>Expenses</li>
+              <Link to="/expenses"><li>Expenses</li></Link>
+              {/* <li>Expenses</li> */}
               <li>Goals</li>
             </ul>
           </div>
           <br />
           <div className="al">
-            <h2>Income Contributions</h2>
+            <h3>Income Contributions</h3>
             <p>
               Visualize the proportionate distribution of your income sources
               with a pie chart, allowing you to quickly understand how your
               earnings are divided among different sources.
             </p>
             <table>
-              <tr className="try">
-                <th>SOURCE</th>
-                <th>AMOUNT</th>
-                <th>PERIOD</th>
-                <th>CREATED ON</th>
-                <th>EXAMINE</th>
-              </tr>
-
-              <tr>
-                <td>Salary</td>
-                <td>400, 000 RWF</td>
-                <td>Monthly</td>
-                <td>19:34 PM</td>
-                <td>
-                  <button className="butn">Examine</button>
-                </td>
-              </tr>
-              <tr>
+            <thead>
+      <tr>
+        <th>SOURCE</th>
+        <th>AMOUNT</th>
+        <th>PERIOD</th>
+        <th>CREATED ON</th>
+        <th>EXAMINE</th>
+        {/* <th></th> */}
+      </tr>
+    </thead>
+    {IncomeDetail.map((detail)=>(
+      <tr>
+        <td>{detail.SOURCE}</td>
+        <td>{detail.AMOUNT}</td>
+        <td>{detail.PERIOD}</td>
+        <td>{detail.CREATEDON}</td>
+        <td> <button>{detail.button}</button></td>
+      </tr>
+    )
+    )}
+     </table>
+            <br />
+              {/* <tr>
                 <td>Running a Shop</td>
                 <td>400, 000 RWF</td>
                 <td>Every 2 weeks</td>
@@ -148,12 +155,10 @@ function Getincome() {
                 <td>
                   <button className="butn">Examine</button>
                 </td>
-              </tr>
-            </table>
-            <br />
-            <br />
-            <br />
-            <h2>MONTHLY TREND ANALYSIS</h2>
+              </tr> */}
+           
+          
+            {/* <h2>MONTHLY TREND ANALYSIS</h2>
 
             <p>
               Discover valuable insights into the growth and fluctuations of
@@ -210,9 +215,9 @@ function Getincome() {
             </table>
             <br />
             <br />
-            <br />
+            <br /> */}
 
-            <h2>COMPARISON BY CATEGORY</h2>
+            {/* <h2>COMPARISON BY CATEGORY</h2>
 
             <p>
               Break down your income sources into specific categories or
@@ -247,7 +252,7 @@ function Getincome() {
                   <button className="butn">Examine</button>
                 </td>
               </tr>
-            </table>
+            </table> */}
           </div>
         </div>
       </div>

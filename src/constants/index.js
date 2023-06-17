@@ -41,14 +41,10 @@ export const testData = [
   // },
 ];
 
-// export const tableData = [
-//   {
-//     title:
-//   }
-// ]
 
- export const teamCards=[
+export const tableData = [
   {
+
    heading:"Team one", 
    par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
   },
@@ -68,5 +64,183 @@ export const testData = [
     par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
    } , 
         
+
+    key: 1,
+    title: "Buying a car ",
+    startingDate: "2/3/2023",
+    endingDate: "1/6/2023",
+    amount: "20000",
+    description: "I want to buy a car that i will be using",
+  },
+];
+
+export const IncomeDetail=[
+  {
+    SOURCE :"Salary",
+    AMOUNT :"400$",
+    PERIOD: "Montly",
+    CREATEDON:"19:43 PM",
+     button : "Examine"
+  },
+  {
+      SOURCE :"Student Scholarship",
+      AMOUNT :"100$",
+      PERIOD: "09 May 2023",
+      CREATEDON:"20:34 PM",
+      button : "Examine"
+    },
+    {
+      SOURCE :"Runming a Shop",
+      AMOUNT :"400$",
+      PERIOD: "Every 2 weeks",
+      CREATEDON:"20:34 PM",
+      button : "Examine"
+    },
+    {
+      SOURCE :"Loan",
+      AMOUNT :"1000$",
+      PERIOD: "Occasionally",
+      CREATEDON:"19:50 PM",
+      button : "Examine"
+    },
+    {
+      SOURCE :"Gifts",
+      AMOUNT :"1000$",
+      PERIOD: "Occasionally",
+      CREATEDON:"19:50 PM",
+      button : "Examine"
+    },
+   
+
   ]
+
+  export const ExpensesDetail=[
+    {
+      SOURCE :"Rent",
+      AMOUNT :"400$",
+      PERIOD: "Montly",
+      CREATEDON:"19:43 PM",
+       button : "Examine"
+    },
+    {
+        SOURCE :"Food",
+        AMOUNT :"100$",
+        PERIOD: "09 May 2023",
+        CREATEDON:"20:34 PM",
+        button : "Examine"
+      },
+      {
+        SOURCE :"Communicatons",
+        AMOUNT :"400$",
+        PERIOD: "Every 2 weeks",
+        CREATEDON:"20:34 PM",
+        button : "Examine"
+      },
+      {
+        SOURCE :"Insuarence",
+        AMOUNT :"1000$",
+        PERIOD: "Occasionally",
+        CREATEDON:"19:50 PM",
+        button : "Examine"
+      },
+      {
+        SOURCE :"Others",
+        AMOUNT :"1000$",
+        PERIOD: "Occasionally",
+        CREATEDON:"19:50 PM",
+        button : "Examine"
+      },
+     
+    ]
+    export const Income=[
+      {
+        DATE: "jan 6",
+        SOURCE :"Salary",
+        AMOUNT :"400$",
+      },
+      {
+        DATE: "feb 6",
+        SOURCE :"Running Shop",
+        AMOUNT :"400$",
+      } 
+    ]
+    export const Expense=[
+      {
+        DATE: "jan 6",
+        SOURCE :"Rent",
+        AMOUNT :"200$",
+      },
+      {
+        DATE: "Apl 6",
+        SOURCE :"Communication",
+        AMOUNT :"50$",
+      } 
+    ]
+    export const T_balance=[
+      {
+        DATE: "1230$",
+        SOURCE :"550$",
+        AMOUNT :"400$",
+      },
+      {
+        DATE: "1500$",
+        SOURCE :"120$",
+        AMOUNT :"400$",
+      } 
+    ]
+
+
+
+
+export const teamCards = [
+  {
+    heading: "Team one",
+    Picture:
+      "https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+    par: "Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",
+    button: "Learn more",
+    btn: "Join",
+  },
+  {
+    heading: "Team two",
+    Picture:
+      "https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+    par: "Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",
+    button: "Learn more",
+    btn: "Join",
+  },
+
+  {
+    heading: "Team three",
+    Picture:
+      "https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+    par: "Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",
+    button: "Learn more",
+    btn: "Join ",
+  },
+  {
+    heading: "Team four",
+    Picture:
+      "https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+    par: "Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",
+    button: "Learn more",
+    btn: "Join",
+  },
+  {
+    heading: "Team five",
+    Picture:
+      "https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+    par: "Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",
+    button: "Learn more",
+    btn: "Join",
+  },
+  {
+    heading: "Team six",
+    Picture:
+      "https://images.pexels.com/photos/4968630/pexels-photo-4968630.jpeg?auto=compress&cs=tinysrgb&w=300",
+    par: "Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",
+    button: "Learn more",
+    btn: "Join",
+  },
+];
 

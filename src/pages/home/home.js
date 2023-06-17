@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-// import ScrollReveal from "scrollreveal";
+import ImageOne from "./images/logo.png";
 import "./home.css";
 import Button from "../../properties/Button";
 import Image from "./images/2.webp";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsFacebook } from "react-icons/bs";
@@ -78,8 +77,7 @@ function Home() {
     <div className="savenest-home">
       <div className="savenest-header" id="home">
         <div className="savenest-logo">
-          {/* <img/> */}
-          <h1>LOGO</h1>
+          <img src={ImageOne} alt="logo" />
         </div>
         <div className="savenest-link">
           <ul className="home-list">
