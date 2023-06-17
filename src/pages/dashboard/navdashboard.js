@@ -12,7 +12,7 @@ import { TbLogout } from "react-icons/tb";
 import { AiOutlineArrowDown } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-function Navdashboard() {
+function Navdashboard () {
   const [list, setList] = useState(false);
   const [accountlist, setAccountlist] = useState(false);
   return (
@@ -60,9 +60,7 @@ function Navdashboard() {
                 <div className="myaccount-nav">
                   <ul className="myaccount-nav-list">
                     <li className="myaccount-nav-link">
-                      <Link to="/record">
-                        <a>Add Incomes</a>
-                      </Link>
+                      <Link to="/addincome"> Add Incomes</Link>
                     </li>
                     <li className="myaccount-nav-link">
                       <Link to="/addexpense"> Add Expenses</Link>
@@ -70,7 +68,7 @@ function Navdashboard() {
 
                     <li className="myaccount-nav-link">
                       <Link to="/recording">Balance</Link>
-
+                    </li>
                     <li className="myaccount-nav-link">
 
                     </li>

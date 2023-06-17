@@ -15,7 +15,7 @@ import Setgoal from "../../pages/GoalSection/setgoal";
 import Addexpense from "../../pages/addexpenses/Addexpense"
 import Balance from "../../pages/myAccount/balance";
 import Expenses from "../../pages/expense/Expenses";
-
+import Addincome from "../../pages/income/addincome";
 
 
 const Index = () => {
@@ -35,9 +35,9 @@ const Index = () => {
       <Route path="/dashhome" element={<Dashboardhome />} />
       <Route path="/balance" element={<Balance />} />
       <Route path="/record" element={<Records />} />
-      <Route path="/goal" element={<Goal />} /> 
+      {/* <Route path="/goal" element={<Goal />} />  */}
       <Route path="/addexpense" element={<Addexpense />}/>
-
+      <Route path="/addincome" element={<Addincome />}/>
       <Route path="/viewgoal" element={<Viewgoal />} />
       <Route path="/setgoal" element={<Setgoal />} />
 
