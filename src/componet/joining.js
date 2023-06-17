@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import "./joining.css"
-import { Link } from 'react-router-dom';
+import Dashnav from '../pages/dashboard/dashnav';
 
 const Joining = () => {
     const [enteredText, setEnteredText]=useState("")
@@ -17,8 +17,13 @@ const Joining = () => {
   return (
     <div>
           <div className='Joining-container'>
+            <Dashnav/>
+          <div className="joining">
+            <div className='welcome'>
+              <h1>Welcome to SaveNest saving assocciation Dashboard</h1></div>
+            <div className="Joining-content">
             <div className='picture-one'>
-
+              
             </div>
         <div className='Create-team'>
             <h1>WANT TO CREATE A TEAM</h1>
@@ -35,11 +40,11 @@ const Joining = () => {
                 <option>Other</option>
                 </select></p>
            <button type='submit'>Create team</button>
-           <Link to="/cooperative.js">
-           <button className='All-btn'> All teams</button>
-           </Link>
+           
             </form>
           
+        </div>
+        </div>
         </div>
         </div>
     </div>

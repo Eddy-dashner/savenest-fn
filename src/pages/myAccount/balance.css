@@ -2,6 +2,7 @@
   display: grid;
   grid-template-rows: 0.6fr 0.8fr 0.2fr 1fr;
   height: 100vh;
+  background-color: rgb(235, 235, 235);
 }
 .balance-description {
   display: flex;
@@ -43,4 +44,15 @@
   outline: none;
   margin-bottom: 20px;
   color: black;
+}
+.containerBalanceSec .dashboard-cont .accountsection {
+  background-color: #e0a96d;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  border-radius: 20px;
+}
+.containerBalanceSec .dashboard-cont .sub-titlenav:hover .accountsection {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e0a96d;
 }

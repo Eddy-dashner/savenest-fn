@@ -144,7 +144,6 @@ const Index = () => {
                     </tr>
                   </tbody>
                 </table>
-                <a href="#">Show All</a>
               </div>
             </div>
             <div className="par-child5">
@@ -160,7 +159,8 @@ const Index = () => {
                     </p>
 
                     <p>What are you waiting of join our team now!</p>
-                    <Link to="/joining.js">
+
+                    <Link to="/Dash2">
                       <button className="join-btn">
                         Join team <AiOutlineArrowRight />
                       </button>

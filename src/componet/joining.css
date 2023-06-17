@@ -1,79 +1,157 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.Joining-container{
-    height: 100vh;
-    align-items: center;
-    display: grid;
-    grid-template-columns: 0.7fr 1fr;
+.joining {
+  display: block;
+  height: 100vh;
+}
+.welcome {
+  position: fixed;
+  width: 80%;
+  background-color: white;
+  padding-top: 15px;
+  text-align: center;
+  color: #e0a96d;
+}
+.Joining-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+}
+.Joining-content {
+  background-color: rgb(240, 240, 240);
+  height: 100vh;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
 }
 .picture-one {
-    background-image: url(../pages/home/images/3.png);
-    width:650px;
-    margin-left: 40px;
-    height:320px;
-    background-repeat: no-repeat;
+  background-image: url(../pages/home/images/3.png);
+  width: 400px;
+  height: 320px;
+  margin-left: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.cardsTeam img{
-    height: 150px;
-    object-fit:fill;
-    width: 100%;
+.cardsTeam img {
+  height: 150px;
+  object-fit: fill;
+  width: 100%;
 }
-.Create-team form input{
-    width: 450px;
-    height: 40px;
-    box-shadow: 5px 5px 5px #918f8f;
-    border:1px solid #D9D9D9;
-    outline: none;
-    margin-bottom: 20px;
+.Create-team form input {
+  width: 450px;
+  height: 40px;
+  box-shadow: 5px 5px 5px #918f8f;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  margin-bottom: 20px;
 }
-.Create-team h1{
-   color: #E0A96D;
-   padding-bottom: 20px;
-   font-weight:bolder;
-   
+.Create-team h1 {
+  color: #e0a96d;
+  padding-bottom: 20px;
+  font-weight: bolder;
 }
-.Create-team{
-    padding-left: 100px;
+.Create-team {
+  padding-left: 100px;
 }
-form select{
-    width: 70px;
-    height: 20px;
-    margin-bottom: 20px;
+form select {
+  width: 70px;
+  height: 20px;
+  margin-bottom: 20px;
 }
-form input::placeholder{
-    padding-left: 15px;
-    color: black;
+form input::placeholder {
+  padding-left: 15px;
+  color: black;
 }
-.head-card{
-    color:#E0A96D;
-    text-align: center;
-    font-weight: bolder;
-    padding-top:30px;
-    padding-bottom: 40px;
+.head-card {
+  color: #e0a96d;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
-.cardsTeam{
-    width: 27%;
-    height: 470px;
-    background-color: rgb(240, 240, 240);
-    box-shadow: 5px 5px 15px #D9D9D9;
-    margin:20px 40px 10px 40px;
-    padding: 10px 30px 10px 30px;
+.cardsTeam {
+  width: 41%;
+  height: 470px;
+  background-color: rgb(240, 240, 240);
+  box-shadow: 5px 5px 15px #d9d9d9;
+  margin: 20px 40px 10px 40px;
+  padding: 10px 30px 10px 30px;
 }
-.cardsTeam h1{
-    text-align: center;
-    color: black;
+.cardsTeam h1 {
+  text-align: center;
+  color: black;
+  padding-bottom: 20px;
 }
-.All-btn{
-    margin-left:130px;
+.cardsTeam button {
+  margin-top: 20px;
 }
-.cardsTeam button{
-    margin-top: 20px;
+.whole-cards {
+  display: flex;
+  margin-left: 40px;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
 }
-.whole-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.cooperative-container {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  height: 100vh;
+}
+.cooperative-content {
+  display: block;
+}
+.cooperative-content .here {
+  background-color: rgb(240, 240, 240);
+  margin-top: 80px;
+}
+.cooperative-container .dashnav-container .Team {
+  background-color: white;
+  padding: 0;
+  color: black;
+}
+.cooperative-container .dashnav-container .Teams {
+  background-color: #e0a96d;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  border-radius: 20px;
+}
+.dashnav-container {
+  position: fixed;
+}
+.dash2-content h1 {
+  font-size: 50px;
+  font-family: tahoma;
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke: 1px black;
+  background-image: url(https://images.pexels.com/photos/3849558/pexels-photo-3849558.jpeg?auto=compress&cs=tinysrgb&w=600);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 50s linear infinite;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+.dashboard2-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.3fr 1fr;
+}
+.dash2-content {
+  background-color: rgb(240, 240, 240);
+  height: 100vh;
+  text-align: center;
+  padding-right: 40px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+.dashboard2-container .dashnav-container .Team {
+  padding: 0;
+  background-color: white;
+  color: black;
 }
