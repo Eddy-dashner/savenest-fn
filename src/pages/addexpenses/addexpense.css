@@ -3,11 +3,10 @@
   display: flex;
   justify-content: center;
   height: 100vh;
-  background-color: var(--bg-black-50);
+  background-color: rgb(240, 240, 240);
 }
 .addnew .addexpense {
   margin-top: 180px;
-  /* padding: 40px; */
 }
 .addnew .addexpense .addbtn {
   display: flex;
@@ -27,7 +26,7 @@
 .addnew .addexpense h2 {
   display: flex;
   justify-content: center;
-  color: #f19839;
+  color: #e0a96d;
   font-weight: bold;
 }
 .addnew .addexpense input:hover {

@@ -13,7 +13,7 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 
-function Navdashboard () {
+function Navdashboard() {
   const [list, setList] = useState(false);
   const [accountlist, setAccountlist] = useState(false);
   return (
@@ -66,18 +66,14 @@ function Navdashboard () {
                 <div className="myaccount-nav">
                   <ul className="myaccount-nav-list">
                     <li className="myaccount-nav-link">
-
                       <Link to="/addincome"> Add Incomes</Link>
-
                     </li>
                     <li className="myaccount-nav-link">
                       <Link to="/addexpense"> Add Expenses</Link>
                     </li>
 
                     <li className="myaccount-nav-link">
-
                       <Link to="/balance">Balance</Link>
-
                     </li>
                     <li className="myaccount-nav-link"></li>
                   </ul>
