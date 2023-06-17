@@ -128,10 +128,10 @@ form input::placeholder{
     font-weight: bolder;
     color: transparent;
     -webkit-text-stroke: 1px black;
-    background-image: url(https://images.pexels.com/photos/3849558/pexels-photo-3849558.jpeg?auto=compress&cs=tinysrgb&w=600);
     -webkit-background-clip:text;
      background-position: 0  0;
      animation: back 50s linear infinite;
+     background-image: url(../pages/home/images/3.png);
 }
 @keyframes back{
     100%{

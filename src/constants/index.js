@@ -64,7 +64,7 @@ export const tableData = [
     par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
    } , 
         
-
+  {
     key: 1,
     title: "Buying a car ",
     startingDate: "2/3/2023",
