@@ -43,16 +43,9 @@ export const testData = [
 
 export const tableData = [
   {
-    heading: "Team one",
-    par: "Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",
-    button: "Learn more",
-    btn: "Join Team",
-  },
-  {
-    heading: "Team two",
-    par: "Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",
-    button: "Learn more",
-    btn: "Join Team",
+
+   heading:"Team one", 
+   par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
   },
   {
     heading: "Team three",
@@ -72,15 +65,14 @@ export const tableData = [
     button: "Learn more",
     btn: "Join Team",
   },
-  {
-    heading: "Team six",
-    par: "Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",
-    button: "Learn more",
-    btn: "Join Team",
-  },
-];
-export const putDataInTable = [
-  {
+  { heading:"Team five", 
+   par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
+   }, 
+   { heading:"Team six", 
+    par:"Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",button:"Learn more",btn:"Join Team"
+   } , 
+        
+
     key: 1,
     title: "Buying a car ",
     startingDate: "2/3/2023",

@@ -13,10 +13,9 @@ import Dashboard2 from "../dashboard2";
 import Viewgoal from "../../pages/GoalSection/viewgoal";
 import Setgoal from "../../pages/GoalSection/setgoal";
 import Addexpense from "../../pages/addexpenses/Addexpense";
+import Addincome from "../../pages/income/addincome";
 import Balance from "../../pages/myAccount/balance";
 import Expenses from "../../pages/expense/Expenses";
-import CurrentBalance from "../../pages/currentBalance/currentbal";
-import Recordgoal from "../../pages/session-record/recordgoal";
 
 const Index = () => {
   return (
@@ -35,9 +34,9 @@ const Index = () => {
       <Route path="/dashhome" element={<Dashboardhome />} />
       <Route path="/balance" element={<Balance />} />
       <Route path="/record" element={<Records />} />
-      <Route path="/goals" element={<Recordgoal />} />
+      <Route path="/goal" element={<Goal />} />
       <Route path="/addexpense" element={<Addexpense />} />
-      <Route path="/currentbalance" element={<CurrentBalance />} />
+      <Route path="/adincome" element={<Addincome />} />
       <Route path="/viewgoal" element={<Viewgoal />} />
       <Route path="/setgoal" element={<Setgoal />} />
     </Routes>

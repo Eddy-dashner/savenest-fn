@@ -66,7 +66,7 @@ function Navdashboard() {
                 <div className="myaccount-nav">
                   <ul className="myaccount-nav-list">
                     <li className="myaccount-nav-link">
-                      <Link to="/record">Add Incomes</Link>
+                      <Link to="/addincome"> Add Incomes</Link>
                     </li>
                     <li className="myaccount-nav-link">
                       <Link to="/addexpense"> Add Expenses</Link>
