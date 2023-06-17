@@ -12,7 +12,7 @@
     background-color:rgb(240, 240, 240) ;
     display: block;
     text-align: center;
-    padding-top: 37vh;
+    padding-top: 35vh;
     height: 100vh;
 } 
 .income-content input{
@@ -20,4 +20,8 @@
     height: 40px;
     outline: none;
     margin-bottom: 30px;
+}
+.income-content h2{
+    color: #E0A96D;
+    padding-bottom: 20px;
 }

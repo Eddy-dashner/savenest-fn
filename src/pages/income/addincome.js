@@ -8,6 +8,7 @@ const Addincome = () => {
       <div className="income-container">
         <Navdashboard/>
         <div className='income-content'>
+          <h2>ADD INCOME</h2>
           <input type='text' placeholder='Income type'/> <br/>
           <input type='text' placeholder='Income amount'/><br/>
           <button type='submit'>Save</button>
