@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Goalnav from "./goalNav";
 import DashboardLayout from "../../componet/DashboardLayout";
 import { BsSearch } from "react-icons/bs";
-import { putDataInTable } from "../../constants";
 
 function Viewgoal() {
+  const [viewgoals, setViewgoals] = useState([]);
+
+  fetch("https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/readgoal")
+    .then((res) => res.json())
+    .then((data) => {
+      setViewgoals(data.data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
   return (
     <div className="containerViewgoal">
       <DashboardLayout>
@@ -24,16 +34,16 @@ function Viewgoal() {
                     <th>Ending Time</th>
                     <th>Amount Required</th>
                     <th>Goal Details</th>
-                    <th>Action</th>
+                    <th>Email</th>
                   </tr>
-                  {putDataInTable.map((row) => (
+                  {viewgoals.map((row) => (
                     <tr>
-                      <td>{row.title}</td>
-                      <td>{row.startingDate}</td>
-                      <td>{row.endingDate}</td>
+                      <td>{row.Title}</td>
+                      <td>{row.startTime}</td>
+                      <td>{row.endTime}</td>
                       <td>{row.amount}</td>
-                      <td>{row.description}</td>
-                      <td></td>
+                      <td>{row.detailsGoals}</td>
+                      <td>{row.Email}</td>
                     </tr>
                   ))}
                 </table>

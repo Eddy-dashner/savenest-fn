@@ -21,14 +21,14 @@
   color: #e0a96d;
 }
 .goal-setgoal {
-  height: 660px;
+  height: 100vh;
 }
 .goal-setgoal .setgoal-header {
   font-size: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 25px;
   color: #e0a96d;
 }
 .formAll {
@@ -38,7 +38,7 @@
   align-items: center;
 }
 .goal-setgoal .form-setgoal {
-  padding: 40px;
+  padding: 25px 40px 40px 40px;
 }
 .goal-setgoal .form-setgoal input {
   box-shadow: 5px 5px 5px #918f8f;
@@ -86,4 +86,21 @@
 }
 .viewgoal-page td {
   padding: 10px 20px;
+}
+.form-setgoal #goal-btn {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 35px;
+  background-color: #e0a96d;
+  font-weight: bold;
+  font-size: 16px;
+  width: 15%;
+  box-shadow: none;
+}
+.form-setgoal #goal-btn:hover {
+  border: 2px solid #e0a96d;
+  color: #e0a96d;
+  background-color: white;
+  cursor: pointer;
 }
