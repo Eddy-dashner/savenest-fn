@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.income-container {
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  height: 100vh;
+}
+.income-content {
+  background-color: rgb(240, 240, 240);
+  display: block;
+  text-align: center;
+  padding-top: 25vh;
+  height: 100vh;
+}
+.income-content input {
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #918f8f;
+  height: 40px;
+  width: 400px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+}
+.income-content input:hover {
+  box-shadow: none;
+}
+.income-content h2 {
+  color: #e0a96d;
+  padding-bottom: 20px;
+}

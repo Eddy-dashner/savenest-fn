@@ -1,0 +1,43 @@
+.current-balance-page {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 100vh;
+  background-color: rgb(235, 235, 235);
+}
+.current-balance-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.current-balance-description .current-balance-intro {
+  width: 70%;
+  color: #e0a96d;
+  font-weight: bold;
+  font-size: 20px;
+}
+.current-balance-amount {
+  display: flex;
+  justify-content: center;
+}
+.current-balance-amount .current-balance-par {
+  font-size: 30px;
+  font-weight: bold;
+}
+.current-balance-amount .current-balance-par span {
+  color: #e0a96d;
+}
+
+.current-containerBalanceSec .dashboard-cont .recordSection {
+  background-color: #e0a96d;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  border-radius: 20px;
+}
+.current-containerBalanceSec
+  .dashboard-cont
+  .sub-titlenav:hover
+  .recordSection {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e0a96d;
+}

@@ -16,18 +16,20 @@
   font-weight: bold;
   font-size: 20px;
 }
-.goal-list Link .goal-link a {
-  text-decoration: none;
+
+.goal-list .goal-link:hover {
+  color: #e0a96d;
 }
 .goal-setgoal {
   height: 660px;
 }
 .goal-setgoal .setgoal-header {
-  font-size: 16px;
+  font-size: 17px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 40px;
+  color: #e0a96d;
 }
 .formAll {
   background-color: rgb(235, 235, 235);
@@ -81,4 +83,7 @@
 .viewgoal-page th {
   padding: 10px 20px;
   background-color: rgb(212, 212, 212);
+}
+.viewgoal-page td {
+  padding: 10px 20px;
 }

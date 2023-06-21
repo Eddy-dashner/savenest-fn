@@ -1,39 +1,46 @@
-.addnew{
-    background-color: rgb(27, 62, 218);
-    display: flex;
-    justify-content: center;
-   height: 100vh;
-   background-color: var(--bg-black-50);
+.addnew {
+  background-color: rgb(27, 62, 218);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(240, 240, 240);
 }
-.addnew .addexpense{
-    margin-top:180px;
-    /* padding: 40px; */
-    
+.addnew .addexpense {
+  margin-top: 180px;
 }
-.addnew .addexpense .addbtn{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    gap: 500px;
+.addnew .addexpense .addbtn {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  gap: 500px;
 }
-.addnew .addexpense input{
-   padding: 10px;
-   margin: 20px;
-display: block;
-   box-shadow: 5px 5px 5px #918f8f;
-height: 40px;
-width: 400px;
-border:1px solid #D9D9D9;
-outline: none;
-/* margin-bottom: 20px; */
+.addnew .addexpense input {
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px #918f8f;
+  height: 40px;
+  width: 400px;
+  border: 1px solid #d9d9d9;
+  outline: none;
 }
-.addnew .addexpense h2{
-    display: flex;
-    justify-content: center;
-    color: #f19839;
-    font-weight:bold;
+.addnew .addexpense h2 {
+  display: flex;
+  justify-content: center;
+  color: #e0a96d;
+  font-weight: bold;
 }
-.addnew .addexpense input:hover{
-box-shadow: none;
-cursor: pointer;
+.addnew .addexpense input:hover {
+  box-shadow: none;
+}
+
+.containerAddexpense .dashboard-cont .accountsection {
+  background-color: #e0a96d;
+  padding: 5px 20px 5px 20px;
+  color: white;
+  border-radius: 20px;
+}
+.containerAddexpense .dashboard-cont .sub-titlenav:hover .accountsection {
+  background-color: white;
+  border-radius: 20px;
+  border: 1px solid #e0a96d;
 }

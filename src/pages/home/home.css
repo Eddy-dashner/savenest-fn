@@ -32,6 +32,10 @@
   justify-content: center;
   align-items: center;
 }
+.savenest-logo img {
+  width: 90px;
+  height: 70px;
+}
 .savenest-link {
   width: 100%;
   display: flex;
@@ -47,7 +51,7 @@
   text-decoration: none;
   font-weight: bold;
   color: black;
-  font-size: 18px;
+  font-size: 15px;
 }
 .savenest-link .home-list .home-link:hover a {
   color: #e0a96d;

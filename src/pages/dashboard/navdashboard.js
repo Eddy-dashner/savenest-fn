@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Imge from "./images/logo.png";
 import "../dashboard/dashboard.css";
 import { GrClose } from "react-icons/gr";
 import { MdDashboard } from "react-icons/md";
@@ -9,10 +10,8 @@ import { VscRecordKeys } from "react-icons/vsc";
 import { AiFillSetting } from "react-icons/ai";
 import { TbLogout } from "react-icons/tb";
 import { AiOutlineArrowDown } from "react-icons/ai";
-import { LuMenu } from "react-icons/lu";
-import { BsSun } from "react-icons/bs";
-import { MdDarkMode } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { IoIosArrowDown } from "react-icons/io";
 
 function Navdashboard() {
   const [list, setList] = useState(false);
@@ -23,7 +22,7 @@ function Navdashboard() {
         <aside>
           <div className="top">
             <div className="logo">
-              {/* <img src={logo1} alt="my logo" /> */}
+              <img src={Imge} alt="my logo" />
             </div>
             <div className="close">
               <span>
@@ -34,63 +33,69 @@ function Navdashboard() {
           </div>
           <div className="sidebar">
             <a href="#" className="active">
-              <span>
+              <span className="sideIcons">
                 <MdDashboard />
               </span>{" "}
               <Link to="/dashhome">
                 <h2>Dashboard</h2>
               </Link>
             </a>
-            <a href="#">
-              <span></span> <AiFillHome />
+            <a href="#" className="sub-titlenav">
+              <span className="sideIcons">
+                {" "}
+                <AiFillHome />
+              </span>
               <Link to="/">
                 <h3>Home</h3>
               </Link>
             </a>
-            <a href="#">
-              <MdAccountBox />
-              <h3>My Account</h3>
+            <a href="#" className="sub-titlenav">
+              <span className="sideIcons">
+                <MdAccountBox />
+              </span>
+              <h3 className="accountsection">My Account</h3>
               <div className="myaccount-sectionone">
                 {!accountlist && (
-                  <AiOutlineArrowDown onClick={() => setAccountlist(true)} />
+                  <IoIosArrowDown onClick={() => setAccountlist(true)} />
                 )}
                 {accountlist && (
-                  <AiOutlineArrowDown onClick={() => setAccountlist(false)} />
+                  <IoIosArrowDown onClick={() => setAccountlist(false)} />
                 )}
               </div>
               {accountlist && (
                 <div className="myaccount-nav">
                   <ul className="myaccount-nav-list">
-                    <li className="myaccount-nav-link">
-                      <Link to="/record">
-                        <a>Add Incomes</a>
-                      </Link>
-                    </li>
-                    <li className="myaccount-nav-link">
-                      <Link to="/addexpense"> Add Expenses</Link>
-                    </li>
                     {/* <li className="myaccount-nav-link">
-                      <Link to="/recording">Save</Link>
-                    </li> */}
-                    <li className="myaccount-nav-link">
-                      <Link to="/recording">Balance</Link>
+                      <Link to="/addincome"> Add Incomes</Link>
                     </li>
+                    <li className="myaccount-nav-link">
+                      <Link to="/recording">Expenses</Link>
+                    </li> */}
+
+                    <li className="myaccount-nav-link">
+                      <Link to="/balance">Balance</Link>
+                    </li>
+                    <li className="myaccount-nav-link"></li>
                   </ul>
                 </div>
               )}
             </a>
-            <a href="#">
-              <GiStairsGoal />
-              <Link to="/goal">
-                <h3>Goals</h3>
+            <a href="#" className="sub-titlenav">
+              <span className="sideIcons">
+                <GiStairsGoal />
+              </span>
+              <Link to="/setgoal">
+                <h3 className="goalSection">Goals</h3>
               </Link>
             </a>
-            <a href="#">
-              <VscRecordKeys />
-              <h3>Record</h3>
+            <a href="#" className="sub-titlenav">
+              <span className="sideIcons">
+                <VscRecordKeys />
+              </span>
+              <h3 className="recordSection">Record</h3>
               <div className="record-sectionone">
-                {!list && <AiOutlineArrowDown onClick={() => setList(true)} />}
-                {list && <AiOutlineArrowDown onClick={() => setList(false)} />}
+                {!list && <IoIosArrowDown onClick={() => setList(true)} />}
+                {list && <IoIosArrowDown onClick={() => setList(false)} />}
               </div>
               {list && (
                 <div className="record-nav">
@@ -99,27 +104,30 @@ function Navdashboard() {
                       <Link to="/recording">Income</Link>
                     </li>
                     <li className="record-nav-link">
-                      <Link to="/expenses">Expensee</Link>
+                      <Link to="/expenses">Expense</Link>
                     </li>
                     <li className="record-nav-link">
                       <Link to="/goals">Goals</Link>
                     </li>
                     <li className="record-nav-link">
-                      <Link to="/balance">Balance</Link>
+                      <Link to="/currentbalance">Balance</Link>
                     </li>
-                    
                   </ul>
                 </div>
               )}
             </a>
-            <a href="#">
-              <AiFillSetting />
+            <a href="#" className="sub-titlenav">
+              <span className="sideIcons">
+                <AiFillSetting />
+              </span>
               <h3>Settings</h3>
             </a>
 
             <div className="logout">
-              <a href="#">
-                <TbLogout />
+              <a href="#" className="sub-titlenav">
+                <span className="sideIcons">
+                  <TbLogout />
+                </span>
                 <h3>Logout</h3>
               </a>
             </div>

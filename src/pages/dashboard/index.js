@@ -14,7 +14,7 @@ const Index = () => {
     <DashboardLayout>
       <div className="dash-container">
         <div className="parent">
-          <h1>Welcome to MoneCO Dashboard</h1>
+          <h1>Welcome to SaveNest Dashboard</h1>
           <div className="date">
             <input type="search" placeholder="search..."></input>
           </div>
@@ -144,7 +144,6 @@ const Index = () => {
                     </tr>
                   </tbody>
                 </table>
-                <a href="#">Show All</a>
               </div>
             </div>
             <div className="par-child5">
@@ -160,10 +159,12 @@ const Index = () => {
                     </p>
 
                     <p>What are you waiting of join our team now!</p>
-                    <Link to="/joining.js">
-                    <button className="join-btn">
-                      Join team <AiOutlineArrowRight />
-                    </button></Link>
+
+                    <Link to="/Dash2">
+                      <button className="join-btn">
+                        Join team <AiOutlineArrowRight />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
