@@ -14,6 +14,7 @@
   padding-top: 15px;
   text-align: center;
   color: #e0a96d;
+  /* margin-left: 200px; */
 }
 .Joining-container {
   height: 100vh;
@@ -26,13 +27,14 @@
   align-items: center;
   display: grid;
   grid-template-columns: 0.5fr 1fr;
+  /* margin-left: 300px; */
 }
 .picture-one {
 
     background-image: url(../pages/home/images/3.png);
     width:400px;
     height:320px;
-    margin-left: 30px;
+    margin-left:2px;
     background-size:cover;
     background-repeat: no-repeat;
 }
@@ -48,16 +50,48 @@
     border:1px solid #D9D9D9;
     outline: none;
     margin-bottom: 20px;
+   margin-left: -20px; 
 }
 .Create-team h1{
    color: #E0A96D;
    padding-bottom: 20px;
    font-weight:bolder;
+   margin-top: 50px;
    
 }
 .Create-team{
     padding-left: 100px;
+    
 }
+ .Create-team form .p{
+    width: 520px;
+    margin-top: -20px;
+}
+.Create-team .inputTwo1{
+    display: flex;
+    gap:20px;
+    width: 500px; 
+ }
+ .Create-team .inputTwo2{
+    display: flex;
+    gap:20px;
+    width: 500px; 
+ }
+ .Create-team .inputTwo3{
+    display: flex;
+    gap:20px;
+    width: 500px; 
+ } 
+ .Create-team .inputTwo4{
+    display: flex;
+    gap:20px;
+    width: 500px;
+   
+ } 
+ .Create-team .inputTwo4 #warr{
+    background-color:#e0a96d;
+    box-shadow: none;
+ }
 form select{
     width: 70px;
     height: 20px;
@@ -87,8 +121,9 @@ form input::placeholder{
     color: black;
     padding-bottom: 20px;
 }
-.cardsTeam button{
+.createbtn{
     margin-top: 20px;
+    margin-left: 150px;
 }
 .whole-cards{
     display: flex;

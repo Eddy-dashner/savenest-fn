@@ -1,32 +1,32 @@
-<<<<<<< HEAD
-import React from 'react'
-import {Link} from 'react-router-dom'
-import Button from '../../properties/Button'
-import DashboardLayout from '../../componet/DashboardLayout'
-import "../addexpenses/addexpense.css"
-function Addexpense() {
-  return (
-    <DashboardLayout>
-    <div className='addnew'>
-        <div className='addexpense'>
-            <h2>ADD EXPENSE</h2>
-            <input type='date' placeholder='Period'></input>
-            <input type='text' placeholder='Expense type'></input>
-            <input type='text' placeholder='Amount spent'></input>
-            <div className='addbtn'>
-            <Link to="/expenses">
-            <Button btnName="SAVE"></Button>
-          </Link>
-          {/* <Button btnName="ADD NEW"></Button> */}
-          </div>
-        </div>
 
-    </div>
-    </DashboardLayout>
-  )
-}
+// import React from 'react'
+// import {Link} from 'react-router-dom'
+// import Button from '../../properties/Button'
+// import DashboardLayout from '../../componet/DashboardLayout'
+// import "../addexpenses/addexpense.css"
+// function Addexpense() {
+//   return (
+//     <DashboardLayout>
+//     <div className='addnew'>
+//         <div className='addexpense'>
+//             <h2>ADD EXPENSE</h2>
+//             <input type='date' placeholder='Period'></input>
+//             <input type='text' placeholder='Expense type'></input>
+//             <input type='text' placeholder='Amount spent'></input>
+//             <div className='addbtn'>
+//             <Link to="/expenses">
+//             <Button btnName="SAVE"></Button>
+//           </Link>
+//           {/* <Button btnName="ADD NEW"></Button> */}
+//           </div>
+//         </div>
 
-export default Addexpense
+//     </div>
+//     </DashboardLayout>
+//   )
+// }
+
+// export default Addexpense
 
 import React from "react";
 import { Link } from "react-router-dom";
@@ -58,4 +58,4 @@ function Addexpense() {
 }
 
 export default Addexpense;
->>>>>>> 9c2a422774abd4ae5dc0f6dd129541f59aa706b8
+

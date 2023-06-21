@@ -28,18 +28,29 @@ const Joining = () => {
         <div className='Create-team'>
             <h1>WANT TO CREATE A TEAM</h1>
             <form onSubmit={submitHandler}>
-            <input type='text' placeholder='Team Name' value={enteredText} onChange={TextChangeHandler}  required="required"/> <br/>
-            <input type='text' placeholder='First team member' required="required"/> <br/>
+            <input className='p' type='text' placeholder='Team Name' value={enteredText} onChange={TextChangeHandler}  required="required"/> <br/>
+          <div className='inputTwo1'>  <input type='text' placeholder='First team member' required="required"/> <br/>
+            <input type='emai' placeholder='Your Email' required ="required"/></div>
+            <div className='inputTwo2'> 
             <input type='text' placeholder='Second team member' required="required"/> <br/>
+            <input type='emai' placeholder='Your Email' required ="required"/>
+            </div>
+            <div className='inputTwo3'> 
             <input type='text' placeholder='Third team member' required="required"/> <br/>
-            <p>Initial amount : <select>
+            <input type='emai' placeholder='Your Email' required ="required"/>
+            </div>
+            <div className='inputTwo4'> 
+            <input t ype='text' placeholder='Initial amout' required="required"/> <br/>
+            <input id='warr' type='text' placeholder='Warranty' required ="required"/>
+            </div>
+            {/* <p>Initial amount : <select>
                 <option>$10</option>
                 <option>$25</option>
                 <option>$50</option>
                 <option>$10</option>
                 <option>Other</option>
-                </select></p>
-           <button type='submit'>Create team</button>
+                </select></p> */}
+           <button type='submit' className='createbtn'>Create team</button>
            
             </form>
           
