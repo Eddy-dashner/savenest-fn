@@ -1,3 +1,4 @@
+// import Image1 from "../pages/home/images/pic.jpeg";
 export const allData = [
   {
     id: 1,
@@ -236,5 +237,12 @@ export const teamCards = [
     par: "Supercharge your savings as a team. Our platform offers  seamless collaboration features for collective saving. Create shared collections, invite team-mates, and curate valuableresources together.",
     button: "Learn more",
     btn: "Join",
+  {
+    id: 2,
+    image:
+      "https://images.pexels.com/photos/927451/pexels-photo-927451.jpeg?auto=compress&cs=tinysrgb&w=600",
+    description:
+      "Thanks to this saving website, I've transformed my financial habits and achieved my savings goals faster than ever before. It's an essential tool for anyone looking to take control of their finances and build a brighter financial future.",
+    name: "Kind lay",
   },
 ];
