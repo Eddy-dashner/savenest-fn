@@ -107,6 +107,22 @@ Button:hover {
   background-color: white;
   cursor: pointer;
 }
+#send-btn {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 35px;
+  background-color: #e0a96d;
+  font-weight: bold;
+  font-size: 16px;
+  box-shadow: none;
+}
+#send-btn:hover {
+  border: 2px solid #e0a96d;
+  color: #e0a96d;
+  background-color: white;
+  cursor: pointer;
+}
 .savenest-intro {
   display: grid;
   grid-template-columns: 1fr 0.8fr;

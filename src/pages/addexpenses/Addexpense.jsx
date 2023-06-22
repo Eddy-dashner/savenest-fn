@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
 import DashboardLayout from "../../componet/DashboardLayout";
 import { ToastContainer, toast, Flip } from "react-toastify";
@@ -21,7 +22,7 @@ function Addexpense() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/create",
+        "https://troubled-bee-shrug.cyclic.app/api/v1/create",
         {
           method: "POST",
           headers: {

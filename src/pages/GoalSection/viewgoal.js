@@ -6,7 +6,7 @@ import { BsSearch } from "react-icons/bs";
 function Viewgoal() {
   const [viewgoals, setViewgoals] = useState([]);
 
-  fetch("https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/readgoal")
+  fetch("https://troubled-bee-shrug.cyclic.app/api/v1/readgoal")
     .then((res) => res.json())
     .then((data) => {
       setViewgoals(data.data);
@@ -34,7 +34,7 @@ function Viewgoal() {
                     <th>Ending Time</th>
                     <th>Amount Required</th>
                     <th>Goal Details</th>
-                    <th>Email</th>
+                    {/* <th>Email</th> */}
                   </tr>
                   {viewgoals.map((row) => (
                     <tr>
@@ -43,7 +43,7 @@ function Viewgoal() {
                       <td>{row.endTime}</td>
                       <td>{row.amount}</td>
                       <td>{row.detailsGoals}</td>
-                      <td>{row.Email}</td>
+                      {/* <td>{row.Email}</td> */}
                     </tr>
                   ))}
                 </table>

@@ -18,11 +18,62 @@ import { MdOutlineMenu } from "react-icons/md";
 import { GrFormClose } from "react-icons/gr";
 import { allData, testData } from "../../constants/index";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 // import Indexs from "../../componet/routes";
 
 function Home() {
   const [visible, setVisible] = useState(false);
-  // const [currentCard, setCurrentCard] = useState(1);
+
+  const [data, setData] = useState({
+    name: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    const name = e.target.name;
+    const value = e.target.value;
+    setData({ ...data, [name]: value });
+  };
+  const sendcontact = (e) => {
+    e.preventDefault();
+
+    if (data.name.trim() === "") {
+      return toast.error("please fill all information", {
+        position: toast.POSITION.BOTTOM_RIGHT,
+        autoClose: false,
+        theme: "colored",
+      });
+    } else if (data.phone.trim() === "") {
+      return toast.error("please fill all information", {
+        position: toast.POSITION.BOTTOM_RIGHT,
+        autoClose: false,
+        theme: "colored",
+      });
+    } else if (data.subject.trim() === "") {
+      return toast.error("please fill all information", {
+        position: toast.POSITION.BOTTOM_RIGHT,
+        autoClose: false,
+        theme: "colored",
+      });
+    } else if (data.message.trim() === "") {
+      return toast.error("please fill all information", {
+        position: toast.POSITION.BOTTOM_RIGHT,
+        autoClose: false,
+        theme: "colored",
+      });
+    }
+
+    setData({
+      name: "",
+      phone: "",
+      subject: "",
+      message: "",
+    });
+
+    alert("Thanks for connecting with us");
+  };
 
   //sliding testimonial section
   const [cards, setCards] = useState([]);
@@ -133,7 +184,9 @@ function Home() {
             teams. Sign up now and experience the convenience of our saving
             platform.
           </p>
-          <Button btnName="Explore more"></Button>
+          <a href="#howwork">
+            <Button btnName="Explore more"></Button>
+          </a>
           <span className="left-arrow">
             <MdOutlineArrowForward />
           </span>
@@ -166,6 +219,7 @@ function Home() {
       </div>
       <div
         className="savenest-home-work slide-up"
+        id="howwork"
         ref={(ref) => (sectionRefs.current[1] = ref)}
       >
         <h1 className="hwork">How it works</h1>
@@ -242,17 +296,47 @@ function Home() {
             </div>
           </div>
           <div className="contact-home-form">
-            <input type="text" placeholder="Your Name" className="name" />
-            <input type="text" placeholder="Phone Number" className="phone" />
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="name"
+              name="name"
+              onChange={handleChange}
+              value={data.name}
+            />
+            <input
+              type="text"
+              placeholder="Phone Number"
+              className="phone"
+              name="phone"
+              onChange={handleChange}
+              value={data.phone}
+            />
             <br />
-            <input type="text" placeholder="Subject" className="subject" />
+            <input
+              type="text"
+              placeholder="Subject"
+              className="subject"
+              name="subject"
+              onChange={handleChange}
+              value={data.subject}
+            />
             <br />
             <textarea
               className="message"
               rows="8"
               placeholder="Message"
+              name="message"
+              onChange={handleChange}
+              value={data.message}
             ></textarea>
-            <Button btnName="SEND"></Button>
+            <input
+              type="submit"
+              value="SEND"
+              id="send-btn"
+              onClick={sendcontact}
+            />
+            <ToastContainer></ToastContainer>
           </div>
         </div>
       </div>

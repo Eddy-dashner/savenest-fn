@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Expenses() {
   const [datas, setDatas] = useState([]);
 
-  fetch("https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/read")
+  fetch("https://troubled-bee-shrug.cyclic.app/api/v1/read")
     .then((res) => res.json())
     .then((data) => {
       setDatas(data.expenses);
@@ -45,14 +45,14 @@ function Expenses() {
                     <th>TYPES</th>
                     <th>AMOUNT(RWF)</th>
                     <th>PERIOD</th>
-                    <th>EMAIL</th>
+                    {/* <th>EMAIL</th> */}
                   </tr>
                   {datas.map((detail) => (
                     <tr key={detail._id}>
                       <td>{detail.expenseType}</td>
                       <td>{detail.amountSpent}</td>
                       <td>{detail.Period}</td>
-                      <td>{detail.email}</td>
+                      {/* <td>{detail.email}</td> */}
                     </tr>
                   ))}
                 </thead>

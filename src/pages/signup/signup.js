@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import "./signup.css";
 import { ToastContainer, toast, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 
 function Signup() {
   const name = "SIGN UP";
+  const navigate = useNavigate();
 
   const [data, setData] = useState({
     Firstname: "",
@@ -23,7 +25,7 @@ function Signup() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/user/signup",
+        "https://troubled-bee-shrug.cyclic.app/api/v1/user/signup",
         {
           method: "POST",
           headers: {
@@ -31,16 +33,21 @@ function Signup() {
           },
           body: JSON.stringify(data),
         }
-      )
-        .then((response) => response.json())
-        .then((rep) => {
-          console.log(rep.message); // Handle the response as per your application's requirements
-          toast.success(rep.message, {
-            position: toast.POSITION.TOP_RIGHT,
-            autoClose: 1000,
-            theme: "colored",
-          });
-        });
+      );
+      // .then((response) => response.json())
+      // .then((rep) => {
+      const rep = await response.json();
+      console.log(rep.message); // Handle the response as per your application's requirements
+      toast.success(rep.message, {
+        position: toast.POSITION.TOP_RIGHT,
+        autoClose: 1000,
+        theme: "colored",
+      });
+      if (response.ok) {
+        navigate("/singin.js");
+      }
+      navigate("/singup.js");
+      // });
       return response;
     } catch (error) {
       console.log(error);
@@ -81,11 +88,13 @@ function Signup() {
         theme: "colored",
       });
     }
-    // toast.success("You have successful sign up!", {
-    //   position: toast.POSITION.TOP_RIGHT,
-    //   autoClose: 1000,
-    //   theme: "colored",
-    // });
+    setData({
+      Firstname: "",
+      Lastname: "",
+      Username: "",
+      Email: "",
+      Password: "",
+    });
     post(data);
     console.log(data);
   };

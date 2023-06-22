@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 function RecordGoal() {
   const [recordgoals, setRecordgoals] = useState([]);
 
-  fetch("https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/readgoal")
+  fetch("https://troubled-bee-shrug.cyclic.app/api/v1/readgoal")
     .then((res) => res.json())
     .then((data) => {
       setRecordgoals(data.data);
@@ -46,7 +46,7 @@ function RecordGoal() {
                   <th>Ending Time</th>
                   <th>Amount Required</th>
                   <th>Goal Details</th>
-                  <th>Email</th>
+                  {/* <th>Email</th> */}
                 </tr>
                 {recordgoals.map((rows) => (
                   <tr>
@@ -55,7 +55,7 @@ function RecordGoal() {
                     <td>{rows.endTime}</td>
                     <td>{rows.amount}</td>
                     <td>{rows.detailsGoals}</td>
-                    <td>{rows.Email}</td>
+                    {/* <td>{rows.Email}</td> */}
                   </tr>
                 ))}
               </table>

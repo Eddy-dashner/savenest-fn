@@ -5,7 +5,7 @@ import DashboardLayout from "../../componet/DashboardLayout";
 function Getincome() {
   const [incomes, setIncomes] = useState([]);
 
-  fetch("https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/get")
+  fetch("https://troubled-bee-shrug.cyclic.app/api/v1/get")
     .then((res) => res.json())
     .then((data) => {
       setIncomes(data.data);
@@ -45,7 +45,7 @@ function Getincome() {
                       <th>SOURCE</th>
                       <th>AMOUNT</th>
                       <th>PERIOD</th>
-                      <th>EMAIL</th>
+                      {/* <th>EMAIL</th> */}
                     </tr>
                   </thead>
                   {incomes.map((detail) => (
@@ -53,7 +53,7 @@ function Getincome() {
                       <td>{detail.incomeType}</td>
                       <td>{detail.incomeAmount}</td>
                       <td>{detail.Period}</td>
-                      <td>{detail.email}</td>
+                      {/* <td>{detail.email}</td> */}
                     </tr>
                   ))}
                 </table>

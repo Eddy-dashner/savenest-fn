@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ToastContainer, toast, Flip } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router";
 import "./signin.css";
@@ -21,7 +21,7 @@ const Signin = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/user/login",
+        "https://troubled-bee-shrug.cyclic.app/api/v1/user/login",
         {
           method: "POST",
           headers: {
@@ -29,22 +29,20 @@ const Signin = () => {
           },
           body: JSON.stringify(data),
         }
-      )
-        .then((response) => response.json())
-        .then((rep) => {
-          console.log(rep.message); // Handle the response as per your application's requirements
-          toast.success(rep.message, {
-            position: toast.POSITION.TOP_RIGHT,
-            autoClose: 1000,
-            theme: "colored",
-          });
-          if (response.ok) {
-            navigate("/dashboard");
-          }
-          // if (rep.message === "Login succesful") {
-          //   navigate("/dashboard");
-          // }
-        });
+      );
+      // .then((response) => response.json())
+      // .then((rep) => {
+      const rep = await response.json();
+      console.log(rep.message); // Handle the response as per your application's requirements
+      toast.success(rep.message, {
+        position: toast.POSITION.TOP_RIGHT,
+        autoClose: 1000,
+        theme: "colored",
+      });
+      if (response.ok) {
+        navigate("/dashboard");
+      }
+      // alert(rep.message);
       return response;
     } catch (error) {
       console.log(error);
@@ -66,6 +64,10 @@ const Signin = () => {
         theme: "colored",
       });
     }
+    setData({
+      Email: "",
+      Password: "",
+    });
     post(data);
     console.log(data);
     console.log("hello");

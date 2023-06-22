@@ -5,7 +5,6 @@ import Signup from "../../pages/signup/signup";
 import Signin from "../../pages/signup/signin";
 import Dashboard from "../../pages/dashboard/index";
 import Dashboardhome from "../../pages/dashboard/index";
-import Records from "../../pages/session-record/session";
 import RecordIncome from "../../pages/session-record/getincome";
 import Joining from "../joining";
 import Cooperative from "../cooperative";
@@ -35,14 +34,10 @@ const Index = () => {
       <Route path="/recording" element={<RecordIncome />} />
       <Route path="/dashhome" element={<Dashboardhome />} />
       <Route path="/balance" element={<Balance />} />
-      <Route path="/record" element={<Records />} />
-
       <Route path="/goals" element={<Recordgoal />} />
       <Route path="/addexpense" element={<Addexpense />} />
       <Route path="/currentbalance" element={<CurrentBalance />} />
-
       <Route path="/addincome" element={<Addincome />} />
-
       <Route path="/viewgoal" element={<Viewgoal />} />
       <Route path="/setgoal" element={<Setgoal />} />
     </Routes>

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import DashboardLayout from "../../componet/DashboardLayout";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer, toast, Flip } from "react-toastify";
-import Button from "../../properties/Button";
+import { ToastContainer, toast } from "react-toastify";
 
 import "./balance.css";
 
@@ -14,7 +13,7 @@ function Balance() {
 
   const [data, setData] = useState({
     email: "",
-    amount: 0,
+    amount: "",
   });
   const handleChange = (e) => {
     const name = e.target.name;
@@ -22,11 +21,11 @@ function Balance() {
     setData({ ...data, [name]: value });
   };
 
-  const balValue = 0;
+  const [balValue, setBalValue] = useState("0");
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://fine-pink-cuttlefish-tam.cyclic.app//api/v1/user/transfer",
+        "https://troubled-bee-shrug.cyclic.app//api/v1/user/transfer",
         {
           method: "POST",
           headers: {
@@ -43,7 +42,8 @@ function Balance() {
             autoClose: 1000,
             theme: "colored",
           });
-          balValue = rep;
+          setBalValue(rep);
+          console.log(balValue);
         });
       return response;
     } catch (error) {
@@ -67,6 +67,10 @@ function Balance() {
         theme: "colored",
       });
     }
+    setData({
+      email: "",
+      amount: "",
+    });
 
     post(data);
     console.log(data);
