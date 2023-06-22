@@ -6,13 +6,8 @@
   background-color: rgb(240, 240, 240);
 }
 .addnew .addexpense {
-  margin-top: 180px;
-}
-.addnew .addexpense .addbtn {
-  display: flex;
-  justify-content: center;
-  margin: 20px;
-  gap: 500px;
+  margin-top: 150px;
+  text-align: center;
 }
 .addnew .addexpense input {
   padding: 10px;
@@ -43,4 +38,21 @@
   background-color: white;
   border-radius: 20px;
   border: 1px solid #e0a96d;
+}
+.addexpense #expense-btn {
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 30px;
+  background-color: #e0a96d;
+  font-weight: bold;
+  font-size: 16px;
+  width: 24%;
+  box-shadow: none;
+}
+.addexpense #expense-btn:hover {
+  border: 2px solid #e0a96d;
+  color: #e0a96d;
+  background-color: white;
+  cursor: pointer;
 }

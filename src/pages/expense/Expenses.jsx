@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./expenses.css";
-import { ExpensesDetail } from "../../constants";
 import DashboardLayout from "../../componet/DashboardLayout";
 import { Link } from "react-router-dom";
 function Expenses() {
+  const [datas, setDatas] = useState([]);
+
+  fetch("https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/read")
+    .then((res) => res.json())
+    .then((data) => {
+      setDatas(data.expenses);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
   return (
     <div className="recordExpenseCont">
       <DashboardLayout>
@@ -14,7 +24,7 @@ function Expenses() {
                 <li>Income</li>
               </Link>
               <li className="bold">Expenses</li>
-              <Link to="/goal">
+              <Link to="/goals">
                 <li>Goal</li>
               </Link>
             </ul>
@@ -33,17 +43,19 @@ function Expenses() {
                 <thead>
                   <tr>
                     <th>TYPES</th>
-                    <th>AMOUNT</th>
+                    <th>AMOUNT(RWF)</th>
                     <th>PERIOD</th>
+                    <th>EMAIL</th>
                   </tr>
+                  {datas.map((detail) => (
+                    <tr key={detail._id}>
+                      <td>{detail.expenseType}</td>
+                      <td>{detail.amountSpent}</td>
+                      <td>{detail.Period}</td>
+                      <td>{detail.email}</td>
+                    </tr>
+                  ))}
                 </thead>
-                {ExpensesDetail.map((detail) => (
-                  <tr>
-                    <td>{detail.SOURCE}</td>
-                    <td>{detail.AMOUNT}</td>
-                    <td>{detail.PERIOD}</td>
-                  </tr>
-                ))}
               </table>
             </div>
           </div>

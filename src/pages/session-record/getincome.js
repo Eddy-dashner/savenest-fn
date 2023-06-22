@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./getincome.css";
 import { Link } from "react-router-dom";
 import DashboardLayout from "../../componet/DashboardLayout";
-import { IncomeDetail } from "../../constants";
 function Getincome() {
+  const [incomes, setIncomes] = useState([]);
+
+  fetch("https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/get")
+    .then((res) => res.json())
+    .then((data) => {
+      setIncomes(data.data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
   return (
     <div className="recordIncomeCont">
       <DashboardLayout>
@@ -15,7 +25,7 @@ function Getincome() {
                 <Link to="/expenses">
                   <li>Expenses</li>
                 </Link>
-                <Link to="/goal">
+                <Link to="/goals">
                   <li>Goals</li>
                 </Link>
               </ul>
@@ -35,13 +45,15 @@ function Getincome() {
                       <th>SOURCE</th>
                       <th>AMOUNT</th>
                       <th>PERIOD</th>
+                      <th>EMAIL</th>
                     </tr>
                   </thead>
-                  {IncomeDetail.map((detail) => (
-                    <tr>
-                      <td>{detail.SOURCE}</td>
-                      <td>{detail.AMOUNT}</td>
-                      <td>{detail.PERIOD}</td>
+                  {incomes.map((detail) => (
+                    <tr key={detail._id}>
+                      <td>{detail.incomeType}</td>
+                      <td>{detail.incomeAmount}</td>
+                      <td>{detail.Period}</td>
+                      <td>{detail.email}</td>
                     </tr>
                   ))}
                 </table>
