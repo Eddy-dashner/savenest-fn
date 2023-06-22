@@ -1,13 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import DashboardLayout from "../../componet/DashboardLayout";
 import { BsSearch } from "react-icons/bs";
-import { putDataInTable } from "../../constants";
 import "./recordgoals.css";
+import { Link } from "react-router-dom";
 
 function RecordGoal() {
+  const [recordgoals, setRecordgoals] = useState([]);
+
+  fetch("https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/readgoal")
+    .then((res) => res.json())
+    .then((data) => {
+      setRecordgoals(data.data);
+    })
+    .catch((error) => {
+      console.error(error);
+    });
+
   return (
     <div className="record-containerViewgoal">
       <DashboardLayout>
+        <div className="second">
+          <ul>
+            <Link to="/recording">
+              <li className="bold">Income</li>
+            </Link>
+            <Link to="/expenses">
+              <li>Expenses</li>
+            </Link>
+            <Link to="/goals">
+              <li className="bolds">Goals</li>
+            </Link>
+          </ul>
+        </div>
         <div className="record-viewgoalAll">
           <div className="record-viewgoal-page">
             <div className="record-viewgoal-search">
@@ -22,16 +46,16 @@ function RecordGoal() {
                   <th>Ending Time</th>
                   <th>Amount Required</th>
                   <th>Goal Details</th>
-                  <th>Action</th>
+                  <th>Email</th>
                 </tr>
-                {putDataInTable.map((row) => (
+                {recordgoals.map((rows) => (
                   <tr>
-                    <td>{row.title}</td>
-                    <td>{row.startingDate}</td>
-                    <td>{row.endingDate}</td>
-                    <td>{row.amount}</td>
-                    <td>{row.description}</td>
-                    <td></td>
+                    <td>{rows.Title}</td>
+                    <td>{rows.startTime}</td>
+                    <td>{rows.endTime}</td>
+                    <td>{rows.amount}</td>
+                    <td>{rows.detailsGoals}</td>
+                    <td>{rows.Email}</td>
                   </tr>
                 ))}
               </table>

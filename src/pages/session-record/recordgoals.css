@@ -1,12 +1,35 @@
+.record-containerViewgoal .second {
+  box-shadow: 1px 1px 1px #d9d9d9;
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+}
+.second ul,
+li {
+  cursor: pointer;
+  color: black;
+  list-style: none;
+  display: flex;
+  padding: 10px 100px;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.second ul li:hover {
+  color: rgba(224, 169, 109, 1);
+}
+
+.second a {
+  text-decoration: none;
+  color: black;
+}
 .record-viewgoalAll {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 40px;
   background-color: rgb(235, 235, 235);
 }
 .record-viewgoal-search {
   margin-bottom: 20px;
+  padding-top: 40px;
 }
 .record-viewgoal-search input {
   box-shadow: 2px 2px 2px #918f8f;
@@ -27,4 +50,7 @@
 }
 .record-viewgoal-page td {
   padding: 10px 20px;
+}
+.second .bolds {
+  color: #e0a96d;
 }
