@@ -1,10 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
-import ImageOne from "./images/logo.png";
+import React from "react";
 import "./home.css";
 import Button from "../../properties/Button";
 import Image from "./images/2.webp";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Image1 from "./images/pic.jpeg";
 import { BsFacebook } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
@@ -14,65 +12,9 @@ import { MdMarkEmailUnread } from "react-icons/md";
 import { MdArrowForwardIos } from "react-icons/md";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { MdOutlineArrowForward } from "react-icons/md";
-import { MdOutlineMenu } from "react-icons/md";
-import { GrFormClose } from "react-icons/gr";
-import { allData, testData } from "../../constants/index";
-import { Link } from "react-router-dom";
-// import Indexs from "../../componet/routes";
+import { allData } from "../../constants/index";
 
 function Home() {
-  const [visible, setVisible] = useState(false);
-  // const [currentCard, setCurrentCard] = useState(1);
-
-  //sliding testimonial section
-  const [cards, setCards] = useState([]);
-  const [slideIndex, setSlideIndex] = useState(0);
-
-  useEffect(() => {
-    setCards(testData);
-  }, []);
-
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    initialSlide: slideIndex,
-    autoplay: true,
-    autoplaySpeed: 30, // Set the duration between slides in milliseconds
-    afterChange: (current) => setSlideIndex(current),
-  };
-
-  //hereeee
-
-  const sectionRefs = useRef([]);
-
-  useEffect(() => {
-    const options = {
-      threshold: 0.2, // Adjust the threshold as needed
-    };
-
-    const handleIntersect = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-          observer.unobserve(entry.target);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(handleIntersect, options);
-
-    sectionRefs.current.forEach((sectionRef) => {
-      observer.observe(sectionRef);
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
   return (
     <div className="savenest-home">
       <div className="savenest-header" id="home">
@@ -101,23 +43,12 @@ function Home() {
           {!visible && <MdOutlineMenu onClick={() => setVisible(true)} />}
           {visible && <GrFormClose onClick={() => setVisible(false)} />}
         </div>
-      </div>
-      {visible && (
-        <div className="semi-nav">
-          <ul className="semi-nav-list">
-            <li className="semi-nav-link">
-              <a href="#home">Home</a>
-            </li>
-            <li className="semi-nav-link">
-              <a href="#about">Who we are</a>
-            </li>
-            <li className="semi-nav-link">
-              <a href="#connect">Connect</a>
-            </li>
-          </ul>
+        <div className="savenest-humberger">
+          {!visible && <MdOutlineMenu onClick={() => setVisible(true)} />}
+          {visible && <GrFormClose onClick={() => setVisible(false)} />}
         </div>
-      )}
-      <div className="savenest-intro" id="about">
+      </div>
+      <div className="savenest-intro">
         <div className="savenest-secone">
           <h1>
             Save <br /> With Us
@@ -179,42 +110,36 @@ function Home() {
           ))}
         </div>
       </div>
-      <div
-        className="savenest-home-test slide-up"
-        ref={(ref) => (sectionRefs.current[2] = ref)}
-      >
-        <h1 className="home-test-header">Testimonials</h1>
-        <slider {...settings}>
-          <div className="testimonial-home-intro">
-            {testData.map((test) => (
-              <div className="all-home-test" key={testData.id}>
-                <div className="test-image">
-                  <img src={test.image} />
-                </div>
-                <div className="test-descri">
-                  <p className="test-descri-para">{test.description}</p>
-                  <br />
-                  <h4 className="test-descri-head">{test.name}</h4>
-                </div>
-                <div className="test-home-icon">
-                  <span>
-                    <MdArrowForwardIos />
-                  </span>
-                  <span>
-                    <MdArrowBackIosNew />
-                  </span>
-                </div>
-              </div>
-            ))}
+      <div className="savenest-test">
+        <h1>Testimonials</h1>
+        <div className="all-test">
+          <div className="test-image">
+            <img src={Image1} alt="testimonial-image" />
           </div>
-        </slider>
+          <div className="test-descri">
+            <p>
+              Thanks to this saving website, I've transformed my financial
+              habits and achieved my savings goals faster than ever before. It's
+              an essential tool for anyone looking to take control of their
+              finances and build a brighter financial future.
+            </p>
+            <br />
+            <h4>
+              Kelly <span>Mons</span>
+            </h4>
+          </div>
+          <div className="test-icon">
+            <span>
+              <MdArrowForwardIos />
+            </span>
+            <span>
+              <MdArrowBackIosNew />
+            </span>
+          </div>
+        </div>
       </div>
-      <div
-        className="savenest-home-contact slide-up"
-        id="connect"
-        ref={(ref) => (sectionRefs.current[3] = ref)}
-      >
-        <h1 className="home-contact-header">Connect with us</h1>
+      <div className="savenest-contact">
+        <h1>Connect with us</h1>
         <div className="both-savenest">
           <div className="contact-home-info">
             <h2 className="contact-home-head">
@@ -257,8 +182,8 @@ function Home() {
         </div>
       </div>
       <div className="savenest-footer">
-        <h1 className="footer-home-header">SaveNest</h1>
-        <p className="par-foot">
+        <h1>SaveNest</h1>
+        <p>
           Start saving and secure your financial future. Our saving website is
           here to help <br /> you achieve your money-saving goals.
         </p>
