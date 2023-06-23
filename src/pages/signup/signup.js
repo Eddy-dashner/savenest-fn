@@ -3,19 +3,16 @@ import "./signup.css";
 import { ToastContainer, toast, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
-// import Button from "../../properties/Button";
 
 function Signup() {
   const name = "SIGN UP";
 
   const [data, setData] = useState({
-    FirstName: "",
-    LastName: "",
-    UserName: "",
+    Firstname: "",
+    Lastname: "",
+    Username: "",
     Email: "",
-    Phone: "",
     Password: "",
-    ConfirmPassword: "",
   });
   const handleChange = (e) => {
     const name = e.target.name;
@@ -23,59 +20,74 @@ function Signup() {
     setData({ ...data, [name]: value });
   };
 
+  let post = async (body) => {
+    try {
+      const response = await fetch(
+        "https://fine-pink-cuttlefish-tam.cyclic.app/api/v1/user/signup",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }
+      )
+        .then((response) => response.json())
+        .then((rep) => {
+          console.log(rep.message); // Handle the response as per your application's requirements
+          toast.success(rep.message, {
+            position: toast.POSITION.TOP_RIGHT,
+            autoClose: 1000,
+            theme: "colored",
+          });
+        });
+      return response;
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    console.log(data);
-    if (data.FirstName.trim() === "") {
-      toast.error("please fill all information", {
+    if (data.Firstname.trim() === "") {
+      return toast.error("please fill all information", {
         position: toast.POSITION.BOTTOM_RIGHT,
         autoClose: false,
         theme: "colored",
       });
-    } else if (data.LastName.trim() === "") {
-      toast.error("please fill all information", {
+    } else if (data.Lastname.trim() === "") {
+      return toast.error("please fill all information", {
         position: toast.POSITION.BOTTOM_RIGHT,
         autoClose: false,
         theme: "colored",
       });
-    } else if (data.UserName.trim() === "") {
-      toast.error("please fill all information", {
+    } else if (data.Username.trim() === "") {
+      return toast.error("please fill all information", {
         position: toast.POSITION.BOTTOM_RIGHT,
         autoClose: false,
         theme: "colored",
       });
     } else if (data.Email.trim() === "") {
-      toast.error("please fill all information", {
-        position: toast.POSITION.BOTTOM_RIGHT,
-        autoClose: false,
-        theme: "colored",
-      });
-    } else if (data.Phone.trim() === "") {
-      toast.error("please fill all information", {
+      return toast.error("please fill all information", {
         position: toast.POSITION.BOTTOM_RIGHT,
         autoClose: false,
         theme: "colored",
       });
     } else if (data.Password.trim() === "") {
-      toast.error("please fill all information", {
+      return toast.error("please fill all information", {
         position: toast.POSITION.BOTTOM_RIGHT,
         autoClose: false,
-        theme: "colored",
-      });
-    } else if (data.ConfirmPassword.trim() === "") {
-      toast.error("please fill all information", {
-        position: toast.POSITION.BOTTOM_RIGHT,
-        autoClose: false,
-        theme: "colored",
-      });
-    } else {
-      toast.success("You have successful sign up!", {
-        position: toast.POSITION.TOP_RIGHT,
-        autoClose: 1000,
         theme: "colored",
       });
     }
+    // toast.success("You have successful sign up!", {
+    //   position: toast.POSITION.TOP_RIGHT,
+    //   autoClose: 1000,
+    //   theme: "colored",
+    // });
+    post(data);
+    console.log(data);
   };
   return (
     <div>
@@ -97,25 +109,26 @@ function Signup() {
                 <input
                   type="text"
                   placeholder="First Name"
-                  name="FirstName"
+                  name="Firstname"
                   onChange={handleChange}
-                  value={data.FirstName}
+                  value={data.Firstname}
                 />
+                <br />
                 <input
                   type="text"
                   placeholder="Last Name"
-                  name="LastName"
+                  name="Lastname"
                   onChange={handleChange}
-                  value={data.LastName}
+                  value={data.Lastname}
                 />
                 <br />
               </div>
               <input
                 type="text"
                 placeholder="UserName"
-                name="UserName"
+                name="Username"
                 onChange={handleChange}
-                value={data.UserName}
+                value={data.Username}
               />
               <br />
               <input
@@ -127,14 +140,6 @@ function Signup() {
               />
               <br />
               <input
-                type="phone"
-                placeholder="Phone "
-                name="Phone"
-                onChange={handleChange}
-                value={data.Phone}
-              />
-              <br />
-              <input
                 type="password"
                 placeholder="Password"
                 name="Password"
@@ -142,19 +147,8 @@ function Signup() {
                 value={data.Password}
               />
               <br />
-              <input
-                type="password"
-                placeholder="Confirm Password"
-                name="ConfirmPassword"
-                onChange={handleChange}
-                value={data.ConfirmPassword}
-              />
               <br />
-              <div className="checks">
-                <input type="checkbox" name="agree" id="check" />
-                <label>I Agree to the terms and conditions of use.</label>
-                <br />
-              </div>
+
               <Link to="/dashboard">
                 {" "}
                 <input
@@ -164,7 +158,7 @@ function Signup() {
                   onClick={handleSubmit}
                 />
               </Link>
-              {/* <Button btnName="Submit"></Button> */}
+
               <ToastContainer
                 transition={Flip}
                 hideProgressBar={true}
