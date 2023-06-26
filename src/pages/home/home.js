@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import ImageOne from "./images/logo.png";
 import "./home.css";
 import Button from "../../properties/Button";
 import Image from "./images/2.webp";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import Image1 from "./images/pic.jpeg";
+import ImageOne from "./images/logo.png";
 import { BsFacebook } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
@@ -145,7 +144,7 @@ function Home() {
         </div>
         <div className="savenest-signin">
           <Link to="/signup.js">
-            <Button btnName="Sign in"></Button>
+            <Button btnName="SignIn"></Button>
           </Link>
         </div>
         <div className="savenest-humberger">

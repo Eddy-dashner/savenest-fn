@@ -127,7 +127,7 @@ Button:hover {
   display: grid;
   grid-template-columns: 1fr 0.8fr;
   padding: 10px;
-  margin-top: 100px;
+  margin-top: 120px;
 }
 .savenest-secone {
   padding: 40px 0 0 80px;
@@ -581,12 +581,6 @@ Button:hover {
   .contact-home-form .subject {
     width: 93%;
   }
-  /* .savenest-footer h1,
-  p,
-  .footer-lists .footer-icons {
-    font-size: 16px;
-    padding: 0 20px;
-  } */
 }
 @media screen and (min-width: 360px) and (max-width: 500px) {
   .savenest-header {
