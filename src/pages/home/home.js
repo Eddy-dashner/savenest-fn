@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import "./home.css";
 import Button from "../../properties/Button";
 import Image from "./images/2.webp";
-import Image1 from "./images/pic.jpeg";
 import ImageOne from "./images/logo.png";
 import { BsFacebook } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
@@ -19,7 +18,6 @@ import { allData, testData } from "../../constants/index";
 import { Link } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import Indexs from "../../componet/routes";
 
 function Home() {
   const [visible, setVisible] = useState(false);
@@ -75,12 +73,8 @@ function Home() {
   };
 
   //sliding testimonial section
-  const [cards, setCards] = useState([]);
-  const [slideIndex, setSlideIndex] = useState(0);
 
-  useEffect(() => {
-    setCards(testData);
-  }, []);
+  const [slideIndex, setSlideIndex] = useState(0);
 
   const settings = {
     dots: false,
@@ -173,7 +167,7 @@ function Home() {
             Save <br /> With Us
           </h1>
           <div className="respo-image">
-            <img src={Image} />
+            <img src={Image} alt="images" />
           </div>
           <p>
             Welcome to MoneCO! We provide a convenient way for saving, whether
@@ -242,7 +236,7 @@ function Home() {
             {testData.map((test) => (
               <div className="all-home-test" key={testData.id}>
                 <div className="test-image">
-                  <img src={test.image} />
+                  <img src={test.image} alt="picture" />
                 </div>
                 <div className="test-descri">
                   <p className="test-descri-para">{test.description}</p>

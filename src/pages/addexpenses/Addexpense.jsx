@@ -22,7 +22,7 @@ function Addexpense() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://troubled-bee-shrug.cyclic.app/api/v1/create",
+        "https://adorable-puce-quail.cyclic.app/api/v1/create",
         {
           method: "POST",
           headers: {

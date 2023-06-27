@@ -37,7 +37,7 @@ const Joining = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://troubled-bee-shrug.cyclic.app//api/v1/new/teams",
+        "https://adorable-puce-quail.cyclic.app/api/v1/new/teams",
         {
           method: "POST",
           headers: {
@@ -187,7 +187,7 @@ const Joining = () => {
                   <input
                     id="warr"
                     type="text"
-                    placeholder="Warranty"
+                    placeholder="Wallet"
                     name="wallet"
                     onChange={(e) =>
                       setData({ ...data, wallet: e.target.value })

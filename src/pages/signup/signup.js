@@ -25,7 +25,7 @@ function Signup() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://troubled-bee-shrug.cyclic.app/api/v1/user/signup",
+        "https://adorable-puce-quail.cyclic.app/api/v1/user/signup",
         {
           method: "POST",
           headers: {
@@ -44,9 +44,9 @@ function Signup() {
         theme: "colored",
       });
       if (response.ok) {
-        navigate("/singin.js");
+        navigate("/signin.js");
       }
-      navigate("/singup.js");
+      navigate("/signup.js");
       // });
       return response;
     } catch (error) {

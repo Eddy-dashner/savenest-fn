@@ -10,7 +10,7 @@ const Cooperative = () => {
 
   const [viewteams, setViewteams] = useState([]);
 
-  fetch("https://troubled-bee-shrug.cyclic.app/api/v1/user/teams")
+  fetch("https://adorable-puce-quail.cyclic.app/api/v1/user/teams")
     .then((res) => res.json())
     .then((data) => {
       setViewteams(data.data);
@@ -24,7 +24,7 @@ const Cooperative = () => {
   };
   const [data, setData] = useState({
     name: "",
-    username: "",
+    userName: "",
     amount: "",
     email: "",
   });
@@ -37,7 +37,7 @@ const Cooperative = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://troubled-bee-shrug.cyclic.app/api/v1/user/join",
+        "https://adorable-puce-quail.cyclic.app/api/v1/user/join",
         {
           method: "POST",
           headers: {
@@ -71,7 +71,7 @@ const Cooperative = () => {
         autoClose: false,
         theme: "colored",
       });
-    } else if (data.username.trim() === "") {
+    } else if (data.userName.trim() === "") {
       return toast.error("please fill all information", {
         position: toast.POSITION.BOTTOM_RIGHT,
         autoClose: false,
@@ -138,9 +138,9 @@ const Cooperative = () => {
                       <input
                         type="text"
                         placeholder="Your Username"
-                        name="username"
+                        name="userName"
                         onChange={handleChange}
-                        value={data.username}
+                        value={data.userName}
                       />
                       <input
                         type="email"

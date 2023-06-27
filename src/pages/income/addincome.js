@@ -20,7 +20,7 @@ const Addincome = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://troubled-bee-shrug.cyclic.app/api/v1/createincome",
+        "https://adorable-puce-quail.cyclic.app/api/v1/createincome",
         {
           method: "POST",
           headers: {

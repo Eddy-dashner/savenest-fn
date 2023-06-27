@@ -21,11 +21,14 @@ function Balance() {
     setData({ ...data, [name]: value });
   };
 
-  const [balValue, setBalValue] = useState("0");
+  // const [balValue, setBalValue] = useState("0");
+  const [balValue, setBalValue] = useState(
+    localStorage.getItem("balValue") || "0"
+  );
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://troubled-bee-shrug.cyclic.app//api/v1/user/transfer",
+        "https://adorable-puce-quail.cyclic.app//api/v1/user/transfer",
         {
           method: "POST",
           headers: {
@@ -42,7 +45,11 @@ function Balance() {
             autoClose: 1000,
             theme: "colored",
           });
-          setBalValue(rep);
+          // setBalValue(rep);
+          // console.log(balValue);
+
+          setBalValue(rep); // Update balValue state with the response value
+          localStorage.setItem("balValue", rep); // Store balValue in localStorage
           console.log(balValue);
         });
       return response;

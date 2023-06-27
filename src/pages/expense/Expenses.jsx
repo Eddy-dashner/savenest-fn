@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Expenses() {
   const [datas, setDatas] = useState([]);
 
-  fetch("https://troubled-bee-shrug.cyclic.app/api/v1/read")
+  fetch("https://adorable-puce-quail.cyclic.app/api/v1/read")
     .then((res) => res.json())
     .then((data) => {
       setDatas(data.expenses);
