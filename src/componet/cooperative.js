@@ -4,13 +4,14 @@ import Dashnav from "../pages/dashboard/dashnav";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./joining.css";
+import { Link } from "react-router-dom";
 
 const Cooperative = () => {
   const [show, setShow] = useState(true);
 
   const [viewteams, setViewteams] = useState([]);
 
-  fetch("https://adorable-puce-quail.cyclic.app/api/v1/user/teams")
+  fetch("https://gleaming-clothes-pig.cyclic.app/api/v1/user/teams")
     .then((res) => res.json())
     .then((data) => {
       setViewteams(data.data);
@@ -25,7 +26,7 @@ const Cooperative = () => {
   const [data, setData] = useState({
     name: "",
     userName: "",
-    amount: "",
+    amount: Number,
     email: "",
   });
   const handleChange = (e) => {
@@ -37,7 +38,7 @@ const Cooperative = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://adorable-puce-quail.cyclic.app/api/v1/user/join",
+        "https://gleaming-clothes-pig.cyclic.app/api/v1/user/join",
         {
           method: "POST",
           headers: {
@@ -48,13 +49,8 @@ const Cooperative = () => {
       )
         .then((response) => response.json())
         .then((rep) => {
-          console.log(rep); // Handle the response as per your application's requirements
-          // toast.success(rep, {
-          //   position: toast.POSITION.TOP_RIGHT,
-          //   autoClose: 1000,
-          //   theme: "colored",
-          // });
-          alert(rep.message);
+          console.log(rep.message);
+          // alert(rep.message);
         });
       return response;
     } catch (error) {
@@ -65,37 +61,48 @@ const Cooperative = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (data.name.trim() === "") {
-      return toast.error("please fill all information", {
-        position: toast.POSITION.BOTTOM_RIGHT,
-        autoClose: false,
-        theme: "colored",
-      });
-    } else if (data.userName.trim() === "") {
-      return toast.error("please fill all information", {
-        position: toast.POSITION.BOTTOM_RIGHT,
-        autoClose: false,
-        theme: "colored",
-      });
-    } else if (data.email.trim() === "") {
-      return toast.error("please fill all information", {
-        position: toast.POSITION.BOTTOM_RIGHT,
-        autoClose: false,
-        theme: "colored",
-      });
-    } else if (data.amount.trim() === "") {
-      return toast.error("please fill all information", {
-        position: toast.POSITION.BOTTOM_RIGHT,
-        autoClose: false,
-        theme: "colored",
-      });
-    }
+    // if (data.name.trim() === "") {
+    //   return toast.error("please fill all information", {
+    //     position: toast.POSITION.BOTTOM_RIGHT,
+    //     autoClose: false,
+    //     theme: "colored",
+    //   });
+    // } else if (data.userName.trim() === "") {
+    //   return toast.error("please fill all information", {
+    //     position: toast.POSITION.BOTTOM_RIGHT,
+    //     autoClose: false,
+    //     theme: "colored",
+    //   });
+    // } else if (data.email.trim() === "") {
+    //   return toast.error("please fill all information", {
+    //     position: toast.POSITION.BOTTOM_RIGHT,
+    //     autoClose: false,
+    //     theme: "colored",
+    //   });
+    // } else if (data.amount.trim() === "") {
+    //   return toast.error("please fill all information", {
+    //     position: toast.POSITION.BOTTOM_RIGHT,
+    //     autoClose: false,
+    //     theme: "colored",
+    //   });
+    // }
+    // const amount = Number(data.amount);
+
     setData({
       name: "",
-      username: "",
-      amount: "",
+      userName: "",
+      amount: 0,
       email: "",
     });
+
+    // const requestData = {
+    //   ...data,
+    //   amount: amount,
+    // };
+
+    // post(requestData);
+    // console.log(requestData);
+
     post(data);
     console.log(data);
   };
@@ -156,12 +163,15 @@ const Cooperative = () => {
                         onChange={handleChange}
                         value={data.amount}
                       />
+                      {/* <Link to={`/update/${card.id}`}> */}
                       <input
                         type="submit"
                         value="Join"
                         id="donejoining-btn"
                         onClick={handleSubmit}
                       />
+                      {/* join */}
+                      {/* </Link> */}
                     </form>
                   </div>
                 </div>
@@ -169,7 +179,7 @@ const Cooperative = () => {
             </div>
             <div className="whole-cards">
               {viewteams.map((card) => (
-                <div class="cardsTeam">
+                <div class="cardsTeam" key={card.teamName}>
                   <h1>{card.teamName}</h1>
                   <img src={picture} alt="new" />
                   <ul>
@@ -191,5 +201,4 @@ const Cooperative = () => {
     </div>
   );
 };
-
 export default Cooperative;

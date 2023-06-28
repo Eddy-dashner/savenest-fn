@@ -21,7 +21,7 @@ const Signin = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://adorable-puce-quail.cyclic.app/api/v1/user/login",
+        "https://gleaming-clothes-pig.cyclic.app/api/v1/user/login",
         {
           method: "POST",
           headers: {
@@ -39,6 +39,7 @@ const Signin = () => {
         autoClose: 1000,
         theme: "colored",
       });
+      console.log("response is", response);
       if (response.ok) {
         navigate("/dashboard");
       }

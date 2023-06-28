@@ -5,7 +5,7 @@ import DashboardLayout from "../../componet/DashboardLayout";
 function Getincome() {
   const [incomes, setIncomes] = useState([]);
 
-  fetch("https://adorable-puce-quail.cyclic.app/api/v1/get")
+  fetch("https://gleaming-clothes-pig.cyclic.app/api/v1/get")
     .then((res) => res.json())
     .then((data) => {
       setIncomes(data.data);

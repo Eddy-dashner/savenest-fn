@@ -24,7 +24,7 @@ function Setgoal() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://adorable-puce-quail.cyclic.app/api/v1/setGoal",
+        "https://gleaming-clothes-pig.cyclic.app/api/v1/setGoal",
         {
           method: "POST",
           headers: {
