@@ -17,7 +17,6 @@ import Balance from "../../pages/myAccount/balance";
 import Expenses from "../../pages/expense/Expenses";
 import CurrentBalance from "../../pages/currentBalance/currentbal";
 import Recordgoal from "../../pages/session-record/recordgoal";
-import Edit from "../edit";
 
 const Index = () => {
   return (
@@ -41,7 +40,6 @@ const Index = () => {
       <Route path="/addincome" element={<Addincome />} />
       <Route path="/viewgoal" element={<Viewgoal />} />
       <Route path="/setgoal" element={<Setgoal />} />
-      <Route path="update/:id" element={<Edit />} />
     </Routes>
   );
 };

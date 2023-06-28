@@ -19,35 +19,41 @@ const Index = () => {
             <input type="search" placeholder="search..."></input>
           </div>
           <div className="parent1">
-            <div className="par-child1">
-              <div className="insight">
-                <div className="middles">
-                  <h3>Savings</h3>
-                  <h2>$308.56</h2>
-                  <h5>Your saving journery is not bad!</h5>
-                  <div className="progress">
-                    <svg>
-                      <circle cx={38} cy={36} r={36}></circle>
-                    </svg>
+            <div className="par-child5">
+              <div className="team">
+                <div className="updates">
+                  <h2>WORK AS TEAM</h2>
 
-                    <div className="number">
-                      <p>76.5%</p>
-                    </div>
+                  <div className="message">
+                    <p>
+                      {" "}
+                      Start savings as a team. Our platform offers seamless
+                      collaboration featu- res for collective saving.
+                    </p>
+
+                    <p>What are you waiting of join our team now!</p>
+
+                    <Link to="/Dash2">
+                      <button className="join-btn">
+                        Join team <AiOutlineArrowRight />
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
+
             <div className="par-child2">
               <div className="ch1">
                 <div className="income">
                   <div className="middle">
                     <div className="left">
                       <h3>Income</h3>
-                      <h2>$3308.56</h2>
+                      <h2>0.0</h2>
                     </div>
 
                     <div className="numbers">
-                      <p>87%</p>
+                      <p>0%</p>
                     </div>
                     <h5>Compared to($1500 last month)</h5>
                   </div>
@@ -58,11 +64,11 @@ const Index = () => {
                   <div className="middle">
                     <div className="left">
                       <h3>Expenses</h3>
-                      <h2>$2198</h2>
+                      <h2>0.0</h2>
                     </div>
 
                     <div className="numbers">
-                      <p>50%</p>
+                      <p>0%</p>
                     </div>
                     <h5>Compared to($1500 last month)</h5>
                   </div>
@@ -74,7 +80,7 @@ const Index = () => {
                 <div className="updates">
                   <h2>Balance</h2>
 
-                  <h3>$1200</h3>
+                  <h3>0</h3>
 
                   <div className="message">
                     <span>
@@ -146,25 +152,20 @@ const Index = () => {
                 </table>
               </div>
             </div>
-            <div className="par-child5">
-              <div className="team">
-                <div className="updates">
-                  <h2>WORK AS TEAM</h2>
+            <div className="par-child1">
+              <div className="insight">
+                <div className="middles">
+                  <h3>Savings</h3>
+                  <h2>0</h2>
+                  <h5>Your saving journery is not bad!</h5>
+                  <div className="progress">
+                    <svg>
+                      <circle cx={38} cy={36} r={36}></circle>
+                    </svg>
 
-                  <div className="message">
-                    <p>
-                      {" "}
-                      Start savings as a team. Our platform offers seamless
-                      collaboration featu- res for collective saving.
-                    </p>
-
-                    <p>What are you waiting of join our team now!</p>
-
-                    <Link to="/Dash2">
-                      <button className="join-btn">
-                        Join team <AiOutlineArrowRight />
-                      </button>
-                    </Link>
+                    <div className="number">
+                      <p>0%</p>
+                    </div>
                   </div>
                 </div>
               </div>

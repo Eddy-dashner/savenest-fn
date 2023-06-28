@@ -9,7 +9,6 @@ import { GiStairsGoal } from "react-icons/gi";
 import { VscRecordKeys } from "react-icons/vsc";
 import { AiFillSetting } from "react-icons/ai";
 import { TbLogout } from "react-icons/tb";
-import { AiOutlineArrowDown } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -109,9 +108,9 @@ function Navdashboard() {
                     <li className="record-nav-link">
                       <Link to="/goals">Goals</Link>
                     </li>
-                    <li className="record-nav-link">
+                    {/* <li className="record-nav-link">
                       <Link to="/currentbalance">Balance</Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               )}

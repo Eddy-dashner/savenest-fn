@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ToastContainer, toast, Flip } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./addincome.css";
 import DashboardLayout from "../../componet/DashboardLayout";
@@ -20,7 +20,7 @@ const Addincome = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://gleaming-clothes-pig.cyclic.app/api/v1/createincome",
+        "https://graceful-cod-culottes.cyclic.app/api/v1/createincome",
         {
           method: "POST",
           headers: {

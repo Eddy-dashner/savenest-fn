@@ -5,17 +5,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Joining = () => {
-  // const [enteredText, setEnteredText] = useState("");
-  // const [enterSubmitted, setEnterSubmitted] = useState([]);
-  // const TextChangeHandler = (i) => {
-  //   setEnteredText(i.target.value);
-  // };
-  // const submitHandler = (e) => {
-  //   e.preventDefault();
-  //   setEnterSubmitted([...enterSubmitted, enteredText]);
-  //   setEnteredText("");
-  // };
-
   const [data, setData] = useState({
     teamName: "",
     members: [
@@ -37,7 +26,7 @@ const Joining = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://gleaming-clothes-pig.cyclic.app/api/v1/new/teams",
+        "https://graceful-cod-culottes.cyclic.app/api/v1/new/teams",
         {
           method: "POST",
           headers: {

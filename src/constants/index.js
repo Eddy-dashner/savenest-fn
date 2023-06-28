@@ -25,7 +25,7 @@ export const testData = [
   {
     id: 1,
     image:
-      "https://images.pexels.com/photos/1326946/pexels-photo-1326946.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/1181230/pexels-photo-1181230.jpeg?auto=compress&cs=tinysrgb&w=400",
     description:
       "Thanks to this saving website, I've transformed my financial habits and achieved my savings goals faster than ever before. It's an essential tool for anyone looking to take control of their finances and build a brighter financial future.",
     name: "Kelly Mons",

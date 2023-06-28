@@ -129,7 +129,7 @@ function Home() {
               <a href="">Home</a>
             </li>
             <li className="home-link">
-              <a href="#about">Who we are</a>
+              <a href="#about">AboutUs</a>
             </li>
             <li className="home-link">
               <a href="#connect">Connect</a>
@@ -138,7 +138,7 @@ function Home() {
         </div>
         <div className="savenest-signin">
           <Link to="/signup.js">
-            <Button btnName="SignIn"></Button>
+            <Button btnName="SignUp"></Button>
           </Link>
         </div>
         <div className="savenest-humberger">
@@ -170,12 +170,11 @@ function Home() {
             <img src={Image} alt="images" />
           </div>
           <p>
-            Welcome to MoneCO! We provide a convenient way for saving, whether
+            Welcome to SaveNest! We provide a convenient way for saving, whether
             you're an individual or want to be part of a team. Our user-friendly
             interface allows for easy organization and retrieval of your saved
             pages. But that's not all we also offer collaborative features for
-            teams. Sign up now and experience the convenience of our saving
-            platform.
+            teams.
           </p>
           <a href="#howwork">
             <Button btnName="Explore more"></Button>
@@ -356,7 +355,7 @@ function Home() {
         <div className="footer-lists">
           <ul className="footer-list">
             <li className="footer-link">Home</li>
-            <li className="footer-link">Who we are</li>
+            <li className="footer-link">AboutUs</li>
             <li className="footer-link">Connect</li>
           </ul>
         </div>

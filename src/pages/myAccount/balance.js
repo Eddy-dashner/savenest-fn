@@ -28,7 +28,7 @@ function Balance() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://gleaming-clothes-pig.cyclic.app//api/v1/user/transfer",
+        "https://graceful-cod-culottes.cyclic.app/api/v1/user/transfer",
         {
           method: "POST",
           headers: {

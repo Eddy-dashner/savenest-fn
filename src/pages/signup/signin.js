@@ -21,7 +21,7 @@ const Signin = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://gleaming-clothes-pig.cyclic.app/api/v1/user/login",
+        "https://graceful-cod-culottes.cyclic.app/api/v1/user/login",
         {
           method: "POST",
           headers: {
@@ -40,7 +40,9 @@ const Signin = () => {
         theme: "colored",
       });
       console.log("response is", response);
+
       if (response.ok) {
+        localStorage.setItem("logedIn", data.Email);
         navigate("/dashboard");
       }
       // alert(rep.message);
