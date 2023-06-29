@@ -47,14 +47,15 @@ function Expenses() {
                     <th>PERIOD</th>
                     {/* <th>EMAIL</th> */}
                   </tr>
-                  {datas.map((detail) => (
-                    <tr key={detail._id}>
-                      <td>{detail.expenseType}</td>
-                      <td>{detail.amountSpent}</td>
-                      <td>{detail.Period}</td>
-                      {/* <td>{detail.email}</td> */}
-                    </tr>
-                  ))}
+                  {datas &&
+                    datas.map((detail) => (
+                      <tr key={detail._id}>
+                        <td>{detail.expenseType}</td>
+                        <td>{detail.amountSpent}</td>
+                        <td>{detail.Period}</td>
+                        {/* <td>{detail.email}</td> */}
+                      </tr>
+                    ))}
                 </thead>
               </table>
             </div>
