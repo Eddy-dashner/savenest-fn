@@ -20,7 +20,7 @@ const Addincome = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://desert-sand-angler-hose.cyclic.app/api/v1/createincome",
+        "https://cloudy-wetsuit-fox.cyclic.app/api/v1/createincome",
         {
           method: "POST",
           headers: {
