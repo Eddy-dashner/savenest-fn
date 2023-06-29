@@ -28,7 +28,9 @@ function Balance() {
   let post = async (body) => {
     try {
       const response = await fetch(
+
         `${BASE_URL}/api/v1/user/transfer`,
+
         {
           method: "POST",
           headers: {

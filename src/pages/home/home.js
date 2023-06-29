@@ -129,7 +129,7 @@ function Home() {
               <a href="#">Home</a>
             </li>
             <li className="home-link">
-              <a href="#about">AboutUs</a>
+              <a href="#about">About</a>
             </li>
             <li className="home-link">
               <a href="#connect">Connect</a>

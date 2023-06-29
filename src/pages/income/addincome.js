@@ -21,7 +21,9 @@ const Addincome = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
+
         `${BASE_URL}/api/v1/createincome`,
+
         {
           method: "POST",
           headers: {

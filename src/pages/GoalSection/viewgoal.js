@@ -7,7 +7,9 @@ import BASE_URL from "../../API";
 function Viewgoal() {
   const [viewgoals, setViewgoals] = useState([]);
 
+
   fetch(`${BASE_URL}/api/v1/readgoal`)
+
     .then((res) => res.json())
     .then((data) => {
       setViewgoals(data.data);
@@ -37,16 +39,17 @@ function Viewgoal() {
                     <th>Goal Details</th>
                     {/* <th>Email</th> */}
                   </tr>
-                  {viewgoals.map((row) => (
-                    <tr>
-                      <td>{row.Title}</td>
-                      <td>{row.startTime}</td>
-                      <td>{row.endTime}</td>
-                      <td>{row.amount}</td>
-                      <td>{row.detailsGoals}</td>
-                      {/* <td>{row.Email}</td> */}
-                    </tr>
-                  ))}
+                  {viewgoals &&
+                    viewgoals.map((row) => (
+                      <tr>
+                        <td>{row.Title}</td>
+                        <td>{row.startTime}</td>
+                        <td>{row.endTime}</td>
+                        <td>{row.amount}</td>
+                        <td>{row.detailsGoals}</td>
+                        {/* <td>{row.Email}</td> */}
+                      </tr>
+                    ))}
                 </table>
               </div>
             </div>
