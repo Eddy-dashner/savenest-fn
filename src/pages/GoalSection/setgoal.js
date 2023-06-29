@@ -4,6 +4,7 @@ import "./goal.css";
 import DashboardLayout from "../../componet/DashboardLayout";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BASE_URL from "../../API";
 
 function Setgoal() {
   const [data, setData] = useState({
@@ -23,7 +24,9 @@ function Setgoal() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://cloudy-wetsuit-fox.cyclic.app/api/v1/setGoal",
+
+        `${BASE_URL}/api/v1/setGoal`,
+
         {
           method: "POST",
           headers: {

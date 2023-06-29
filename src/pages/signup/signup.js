@@ -4,6 +4,7 @@ import { ToastContainer, toast, Flip } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
+import BASE_URL from "../../API";
 
 function Signup() {
   const name = "SIGN UP";
@@ -25,7 +26,9 @@ function Signup() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://cloudy-wetsuit-fox.cyclic.app/api/v1/user/signup",
+
+        `${BASE_URL}/api/v1/user/signup`,
+
         {
           method: "POST",
           headers: {

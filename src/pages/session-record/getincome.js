@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import "./getincome.css";
 import { Link } from "react-router-dom";
 import DashboardLayout from "../../componet/DashboardLayout";
+import BASE_URL from "../../API";
 function Getincome() {
   const [incomes, setIncomes] = useState([]);
 
-  fetch("https://cloudy-wetsuit-fox.cyclic.app/api/v1/get")
+
+  fetch(`${BASE_URL}/api/v1/get`)
+
     .then((res) => res.json())
     .then((data) => {
       setIncomes(data.data);

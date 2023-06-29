@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./addincome.css";
 import DashboardLayout from "../../componet/DashboardLayout";
+import BASE_URL from "../../API";
 
 const Addincome = () => {
   const [data, setData] = useState({
@@ -20,7 +21,9 @@ const Addincome = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://cloudy-wetsuit-fox.cyclic.app/api/v1/createincome",
+
+        `${BASE_URL}/api/v1/createincome`,
+
         {
           method: "POST",
           headers: {

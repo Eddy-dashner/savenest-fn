@@ -3,11 +3,14 @@ import DashboardLayout from "../../componet/DashboardLayout";
 import { BsSearch } from "react-icons/bs";
 import "./recordgoals.css";
 import { Link } from "react-router-dom";
+import BASE_URL from "../../API";
 
 function RecordGoal() {
   const [recordgoals, setRecordgoals] = useState([]);
 
-  fetch("https://cloudy-wetsuit-fox.cyclic.app/api/v1/readgoal")
+
+  fetch(`${BASE_URL}/api/v1/readgoal`)
+
     .then((res) => res.json())
     .then((data) => {
       setRecordgoals(data.data);

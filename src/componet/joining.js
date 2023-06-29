@@ -3,6 +3,7 @@ import "./joining.css";
 import Dashnav from "../pages/dashboard/dashnav";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import BASE_URL from "../API";
 
 const Joining = () => {
   const [data, setData] = useState({
@@ -26,7 +27,10 @@ const Joining = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://cloudy-wetsuit-fox.cyclic.app/api/v1/new/teams",
+
+        `${BASE_URL}/api/v1/new/teams`,
+
+ 
         {
           method: "POST",
           headers: {

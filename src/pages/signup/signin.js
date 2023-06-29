@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router";
 import "./signin.css";
+import BASE_URL from "../../API";
 
 const Signin = () => {
   const name = "SIGN IN";
@@ -21,7 +22,9 @@ const Signin = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://cloudy-wetsuit-fox.cyclic.app/api/v1/user/login",
+
+        `${BASE_URL}/api/v1/user/login`,
+
         {
           method: "POST",
           headers: {

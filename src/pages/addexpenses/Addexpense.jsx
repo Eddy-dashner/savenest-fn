@@ -5,6 +5,7 @@ import DashboardLayout from "../../componet/DashboardLayout";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../addexpenses/addexpense.css";
+import BASE_URL from "../../API";
 
 function Addexpense() {
   const [data, setData] = useState({
@@ -22,7 +23,9 @@ function Addexpense() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://cloudy-wetsuit-fox.cyclic.app/api/v1/create",
+
+        `${BASE_URL}/api/v1/create`,
+
         {
           method: "POST",
           headers: {

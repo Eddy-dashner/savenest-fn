@@ -2,10 +2,13 @@ import React, { useState } from "react";
 import "./expenses.css";
 import DashboardLayout from "../../componet/DashboardLayout";
 import { Link } from "react-router-dom";
+import BASE_URL from "../../API";
 function Expenses() {
   const [datas, setDatas] = useState([]);
 
-  fetch("https://cloudy-wetsuit-fox.cyclic.app/api/v1/read")
+
+  fetch(`${BASE_URL}/api/v1/read`)
+
     .then((res) => res.json())
     .then((data) => {
       setDatas(data.expenses);
