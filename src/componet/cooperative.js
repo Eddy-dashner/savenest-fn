@@ -4,6 +4,7 @@ import Dashnav from "../pages/dashboard/dashnav";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./joining.css";
+import BASE_URL from "../API";
 
 const Cooperative = () => {
   const [show, setShow] = useState(true);
@@ -11,7 +12,7 @@ const Cooperative = () => {
   const [name, setName] = useState("");
   const [withdraw, setWithdraw] = useState(true);
 
-  fetch("https://desert-sand-angler-hose.cyclic.app/api/v1/user/teams")
+  fetch(`${BASE_URL}/api/v1/user/teams`)
     .then((res) => res.json())
     .then((data) => {
       setViewteams(data.data);
@@ -48,7 +49,7 @@ const Cooperative = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://desert-sand-angler-hose.cyclic.app/api/v1/user/join",
+        `${BASE_URL}/api/v1/user/join`,
         {
           method: "POST",
           headers: {
@@ -71,7 +72,7 @@ const Cooperative = () => {
   let withdrawcash = async (body) => {
     try {
       const response = await fetch(
-        "https://desert-sand-angler-hose.cyclic.app/api/v1/withdraw",
+        `${BASE_URL}/api/v1/withdraw`,
         {
           method: "POST",
           headers: {

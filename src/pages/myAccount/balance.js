@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer, toast } from "react-toastify";
 
 import "./balance.css";
+import BASE_URL from "../../API";
 
 function Balance() {
   const [show, setShow] = useState(true);
@@ -27,7 +28,7 @@ function Balance() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://desert-sand-angler-hose.cyclic.app/api/v1/user/transfer",
+        `${BASE_URL}/api/v1/user/transfer`,
         {
           method: "POST",
           headers: {

@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import Goalnav from "./goalNav";
 import DashboardLayout from "../../componet/DashboardLayout";
 import { BsSearch } from "react-icons/bs";
+import BASE_URL from "../../API";
 
 function Viewgoal() {
   const [viewgoals, setViewgoals] = useState([]);
 
-  fetch("https://desert-sand-angler-hose.cyclic.app/api/v1/readgoal")
+  fetch(`${BASE_URL}/api/v1/readgoal`)
     .then((res) => res.json())
     .then((data) => {
       setViewgoals(data.data);
