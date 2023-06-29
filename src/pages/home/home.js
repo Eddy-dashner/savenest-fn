@@ -126,7 +126,7 @@ function Home() {
         <div className="savenest-link">
           <ul className="home-list">
             <li className="home-link">
-              <a href="">Home</a>
+              <a href="#">Home</a>
             </li>
             <li className="home-link">
               <a href="#about">AboutUs</a>

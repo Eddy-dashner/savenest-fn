@@ -21,14 +21,13 @@ function Balance() {
     setData({ ...data, [name]: value });
   };
 
-  // const [balValue, setBalValue] = useState("0");
   const [balValue, setBalValue] = useState(
     localStorage.getItem("balValue") || "0"
   );
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://graceful-cod-culottes.cyclic.app/api/v1/user/transfer",
+        "https://desert-sand-angler-hose.cyclic.app/api/v1/user/transfer",
         {
           method: "POST",
           headers: {

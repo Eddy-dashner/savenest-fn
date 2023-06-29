@@ -11,7 +11,7 @@ const Cooperative = () => {
   const [name, setName] = useState("");
   const [withdraw, setWithdraw] = useState(true);
 
-  fetch("https://graceful-cod-culottes.cyclic.app/api/v1/user/teams")
+  fetch("https://desert-sand-angler-hose.cyclic.app/api/v1/user/teams")
     .then((res) => res.json())
     .then((data) => {
       setViewteams(data.data);
@@ -48,7 +48,7 @@ const Cooperative = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://graceful-cod-culottes.cyclic.app/api/v1/user/join",
+        "https://desert-sand-angler-hose.cyclic.app/api/v1/user/join",
         {
           method: "POST",
           headers: {
@@ -71,7 +71,7 @@ const Cooperative = () => {
   let withdrawcash = async (body) => {
     try {
       const response = await fetch(
-        "https://graceful-cod-culottes.cyclic.app/api/v1/withdraw",
+        "https://desert-sand-angler-hose.cyclic.app/api/v1/withdraw",
         {
           method: "POST",
           headers: {

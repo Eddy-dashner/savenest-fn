@@ -25,7 +25,7 @@ function Signup() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://graceful-cod-culottes.cyclic.app/api/v1/user/signup",
+        "https://desert-sand-angler-hose.cyclic.app/api/v1/user/signup",
         {
           method: "POST",
           headers: {

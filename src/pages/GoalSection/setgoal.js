@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import Goalnav from "./goalNav";
 import "./goal.css";
 import DashboardLayout from "../../componet/DashboardLayout";
-import { ToastContainer, toast, Flip } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Button from "../../properties/Button";
 
 function Setgoal() {
   const [data, setData] = useState({
@@ -24,7 +23,7 @@ function Setgoal() {
   let post = async (body) => {
     try {
       const response = await fetch(
-        "https://graceful-cod-culottes.cyclic.app/api/v1/setGoal",
+        "https://desert-sand-angler-hose.cyclic.app/api/v1/setGoal",
         {
           method: "POST",
           headers: {
