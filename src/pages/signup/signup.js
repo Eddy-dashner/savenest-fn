@@ -26,7 +26,9 @@ function Signup() {
   let post = async (body) => {
     try {
       const response = await fetch(
+
         `${BASE_URL}/api/v1/user/signup`,
+
         {
           method: "POST",
           headers: {

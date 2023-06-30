@@ -12,7 +12,10 @@ const Cooperative = () => {
   const [name, setName] = useState("");
   const [withdraw, setWithdraw] = useState(true);
 
+
   fetch(`${BASE_URL}/api/v1/user/teams`)
+
+  
     .then((res) => res.json())
     .then((data) => {
       setViewteams(data.data);
@@ -49,7 +52,10 @@ const Cooperative = () => {
   let post = async (body) => {
     try {
       const response = await fetch(
+
         `${BASE_URL}/api/v1/user/join`,
+
+   
         {
           method: "POST",
           headers: {
@@ -72,7 +78,9 @@ const Cooperative = () => {
   let withdrawcash = async (body) => {
     try {
       const response = await fetch(
+
         `${BASE_URL}/api/v1/withdraw`,
+
         {
           method: "POST",
           headers: {
@@ -267,45 +275,49 @@ const Cooperative = () => {
             )}
           </div>
           <div className="whole-cards">
-            {viewteams.map((card) => (
-              <div class="cardsTeam" key={card.teamName}>
-                <h1>{card.teamName}</h1>
-                <img src={picture} alt="new" />
-                <ul>
-                  {" "}
-                  Team Members:
-                  {card.members.map((member, index) => (
-                    <li key={index}>Name: {member.name}</li>
-                  ))}
-                </ul>
-                <p>Required Amount: {card.requiredAmount}</p>
-                <p>Wallet: {card.wallet}</p>
-                <div>
-                  <div className="join-btn">
-                    <input
-                      type="submit"
-                      value={
-                        checkTeam(card.members, localStorage.getItem("logedIn"))
-                          ? datawithdraw
-                          : datajoin
-                      }
-                      id="jointeam-btn"
-                      onClick={(event) =>
-                        toggleHiddenSection(
-                          card.teamName,
+            {viewteams &&
+              viewteams.map((card) => (
+                <div class="cardsTeam" key={card.teamName}>
+                  <h1>{card.teamName}</h1>
+                  <img src={picture} alt="new" />
+                  <ul>
+                    {" "}
+                    Team Members:
+                    {card.members.map((member, index) => (
+                      <li key={index}>Name: {member.name}</li>
+                    ))}
+                  </ul>
+                  <p>Required Amount: {card.requiredAmount}</p>
+                  <p>Wallet: {card.wallet}</p>
+                  <div>
+                    <div className="join-btn">
+                      <input
+                        type="submit"
+                        value={
                           checkTeam(
                             card.members,
                             localStorage.getItem("logedIn")
                           )
                             ? datawithdraw
                             : datajoin
-                        )
-                      }
-                    />
+                        }
+                        id="jointeam-btn"
+                        onClick={(event) =>
+                          toggleHiddenSection(
+                            card.teamName,
+                            checkTeam(
+                              card.members,
+                              localStorage.getItem("logedIn")
+                            )
+                              ? datawithdraw
+                              : datajoin
+                          )
+                        }
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
         <ToastContainer></ToastContainer>

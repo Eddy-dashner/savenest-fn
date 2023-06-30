@@ -24,7 +24,9 @@ function Setgoal() {
   let post = async (body) => {
     try {
       const response = await fetch(
+
         `${BASE_URL}/api/v1/setGoal`,
+
         {
           method: "POST",
           headers: {
